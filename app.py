@@ -67,9 +67,7 @@ def browse_folder():
         return None
 
 
-st.set_page_config(page_title="DetectionMetrics", layout="wide")
-
-# st.title("DetectionMetrics")
+st.set_page_config(page_title="PerceptionMetrics", layout="wide")
 
 PAGES = {
     "Dataset Viewer": dataset_viewer_tab,
@@ -257,7 +255,7 @@ with st.sidebar:
                     help="Width to resize images for inference",
                 )
         # Load model action in sidebar
-        from detectionmetrics.models.torch_detection import TorchImageDetectionModel
+        from perceptionmetrics.models.torch_detection import TorchImageDetectionModel
         import json, tempfile
 
         load_model_btn = st.button(

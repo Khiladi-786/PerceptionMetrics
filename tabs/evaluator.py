@@ -3,13 +3,13 @@ import os
 import tempfile
 import json
 import pandas as pd
-from detectionmetrics.models.torch_detection import TorchImageDetectionModel
-from detectionmetrics.datasets.coco import CocoDataset
+from perceptionmetrics.models.torch_detection import TorchImageDetectionModel
+from perceptionmetrics.datasets.coco import CocoDataset
 
 
 def evaluator_tab():
     st.header("Evaluator")
-    st.markdown("Evaluate your model on the loaded dataset using detection metrics.")
+    st.markdown("Evaluate your model on the loaded dataset using PerceptionMetrics.")
 
     # Check if we have the required objects from sidebar inputs
     dataset_available = False
