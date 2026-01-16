@@ -1,11 +1,11 @@
 ---
 layout: home
 title: Model zoo
-permalink: /v1/resources/model_zoo/
+permalink: /DetectionMetrics/resources/model_zoo/
 
 
 sidebar:
-  nav: "main_v1"
+  nav: "detectionmetrics"
 ---
 
 Here, you can find models for the different supported frameworks.

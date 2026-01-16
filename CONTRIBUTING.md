@@ -1,4 +1,4 @@
-# Contributing to DetectionMetrics
+# Contributing to PerceptionMetrics
 
 Thanks for your interest on contributing!
 
@@ -40,7 +40,7 @@ The two following points are different depending on the permissions you have to 
 * **Open a pull request:** A pull request is compulsory any time a new change wants to be added to the core or the project. After solving the issue, create a pull request with your branch. In this pull request include all the commits made, write a good description of the changes made and refer to the issue solved to make things easier to the maintainers. Include any additional resource that would be interesting (references, screenshots...). Link the PR with the issue.
 
 * **Testing and merging pull requests**
-One of DetectionMetrics's developers will review your code. Reviewer could ask you to modify your pull request. Please provide timely response for reviewers (within weeks, not months), otherwise you submission could be postponed or even rejected.
+One of PerceptionMetric's developers will review your code. Reviewer could ask you to modify your pull request. Please provide timely response for reviewers (within weeks, not months), otherwise you submission could be postponed or even rejected.
 
 * **[If you have write permission] Don't accept your own pull requests:** Wait for a project maintainer to accept the changes you made. They will probably comment the pull request with some feedback and will consider if it can be merge to the master branch.
  Be proactive and kind!

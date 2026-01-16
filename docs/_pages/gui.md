@@ -1,20 +1,20 @@
 ---
 layout: home
 title: GUI
-permalink: /v2/gui/
+permalink: /gui/
 
 sidebar:
-  nav: "main_v2"
+  nav: "main"
 ---
 
-# DetectionMetrics GUI
+# PerceptionMetrics GUI
 
-DetectionMetrics includes a **Streamlit-based GUI** that provides an intuitive interface for image detection model evaluation, dataset exploration, and real-time inference. The GUI makes it easy to work with detection models without writing code.
+PerceptionMetrics includes a **Streamlit-based GUI** that provides an intuitive interface for image detection model evaluation, dataset exploration, and real-time inference. The GUI makes it easy to work with detection models without writing code.
 
 ## Getting Started
 
 ### Installation
-The GUI is included with DetectionMetrics and requires no additional installation steps beyond the standard setup.
+The GUI is included with PerceptionMetrics and requires no additional installation steps beyond the standard setup.
 
 ### Launching the GUI
 ```bash

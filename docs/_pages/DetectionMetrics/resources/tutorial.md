@@ -1,11 +1,11 @@
 ---
 layout: home
 title: Beginner's Tutorial
-permalink: /v1/resources/tutorial/
+permalink: /DetectionMetrics/resources/tutorial/
 
 
 sidebar:
-  nav: "main_v1"
+  nav: "detectionmetrics"
 ---
 
 Sample video depicting results of this tutorial:

@@ -1,15 +1,15 @@
 ---
 layout: home
 title: Installation
-permalink: /v2/installation/
+permalink: /installation/
 
 sidebar:
-  nav: "main_v2"
+  nav: "main"
 ---
-In the near future, *DetectionMetrics* is planned to be deployed in PyPI. In the meantime, you can clone our repo and build the package locally using either *venv* or *Poetry*.
+In the near future, *PerceptionMetrics* is planned to be deployed in PyPI. In the meantime, you can clone our repo and build the package locally using either *venv* or *Poetry*.
 
 ```
-git clone git@github.com:JdeRobot/DetectionMetrics.git && cd DetectionMetrics
+git clone git@github.com:JdeRobot/PerceptionMetrics.git && cd PerceptionMetrics
 ```
 
 ## Using venv

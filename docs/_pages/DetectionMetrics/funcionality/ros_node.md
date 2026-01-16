@@ -1,11 +1,11 @@
 ---
 layout: home
 title: ROS Node
-permalink: /v1/functionality/ros_node/
+permalink: /DetectionMetrics/functionality/ros_node/
 
 
 sidebar:
-  nav: "main_v1"
+  nav: "detectionmetrics"
 ---
 
 Detection Metrics Deployer functionality is provided as a **ROS Node**.

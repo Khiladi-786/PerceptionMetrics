@@ -1,11 +1,11 @@
 ---
 layout: home
 title: Talks
-permalink: /v1/resources/talks/
+permalink: /DetectionMetrics/resources/talks/
 
 
 sidebar:
-  nav: "main_v1"
+  nav: "detectionmetrics"
 ---
 
 ### Seminar in MSc in Artificial Vision at URJC (Madrid) - March 2020. Presented by Sergio Paniego.

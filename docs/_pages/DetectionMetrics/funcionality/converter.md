@@ -1,11 +1,11 @@
 ---
 layout: home
 title: Converter
-permalink: /v1/functionality/converter/
+permalink: /DetectionMetrics/functionality/converter/
 
 
 sidebar:
-  nav: "main_v1"
+  nav: "detectionmetrics"
 ---
 
 This tool takes a dataset from a specific format and converts it to another format.

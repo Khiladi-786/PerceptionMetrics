@@ -1,11 +1,11 @@
 ---
 layout: home
 title: Command line application
-permalink: /v1/functionality/command_line_application/
+permalink: /DetectionMetrics/functionality/command_line_application/
 
 
 sidebar:
-  nav: "main_v1"
+  nav: "detectionmetrics"
 ---
 
 Detection Metrics supports both a Qt based UI and some command line based applications both requiring a config file to run.

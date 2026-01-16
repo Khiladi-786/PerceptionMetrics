@@ -1,11 +1,11 @@
 ---
 layout: home
 title: Deployer
-permalink: /v1/functionality/deployer/
+permalink: /DetectionMetrics/functionality/deployer/
 
 
 sidebar:
-  nav: "main_v1"
+  nav: "detectionmetrics"
 ---
 
 This tool makes inferences using images from different sources. Having the input, the user provides the weights and several configuration parameters

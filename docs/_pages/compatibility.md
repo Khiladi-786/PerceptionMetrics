@@ -1,10 +1,10 @@
 ---
 layout: home
 title: Compatibility
-permalink: /v2/compatibility/
+permalink: /compatibility/
 
 sidebar:
-  nav: "main_v2"
+  nav: "main"
 ---
 
 ## Image semantic segmentation

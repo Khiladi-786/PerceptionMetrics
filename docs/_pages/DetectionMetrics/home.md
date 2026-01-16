@@ -1,6 +1,6 @@
 ---
 layout: home
-permalink: /v1
+permalink: /DetectionMetrics/
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/cover/test_header_shear_3.png
@@ -10,7 +10,7 @@ header:
 excerpt:
   Evaluation of object detection dataset simplified
 sidebar:
-  nav: "main_v1"
+  nav: "detectionmetrics"
 ---
 
 

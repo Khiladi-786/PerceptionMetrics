@@ -1,11 +1,11 @@
 ---
 layout: home
 title: Evaluator
-permalink: /v1/functionality/evaluator/
+permalink: /DetectionMetrics/functionality/evaluator/
 
 
 sidebar:
-  nav: "main_v1"
+  nav: "detectionmetrics"
 ---
 
 

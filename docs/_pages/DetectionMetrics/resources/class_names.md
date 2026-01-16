@@ -1,11 +1,11 @@
 ---
 layout: home
 title: Class names
-permalink: /v1/resources/class_names/
+permalink: /DetectionMetrics/resources/class_names/
 
 
 sidebar:
-  nav: "main_v1"
+  nav: "detectionmetrics"
 ---
 
 You can find here class names files for the different supported [datasets](/v1/resources/datasets).

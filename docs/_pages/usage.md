@@ -1,14 +1,14 @@
 ---
 layout: home
 title: Usage
-permalink: /v2/usage/
+permalink: /usage/
 
 sidebar:
-  nav: "main_v2"
+  nav: "main"
 ---
 
 ## Interactive GUI
-DetectionMetrics now includes a **Streamlit-based GUI** that provides an intuitive interface for image detection model evaluation and dataset exploration.
+PerceptionMetrics now includes a **Streamlit-based GUI** that provides an intuitive interface for image detection model evaluation and dataset exploration.
 
 ### Launching the GUI
 ```bash
@@ -36,33 +36,33 @@ The GUI consists of three main tabs:
 - Download results
 
 ## Library
-🧑‍🏫️ [Image Segmentation Tutorial](https://github.com/JdeRobot/DetectionMetrics/blob/master/examples/tutorial_image_segmentation.ipynb)
+🧑‍🏫️ [Image Segmentation Tutorial](https://github.com/JdeRobot/PerceptionMetrics/blob/master/examples/tutorial_image_segmentation.ipynb)
 
-🧑‍🏫️ [Image Detection Tutorial](https://github.com/JdeRobot/DetectionMetrics/blob/master/examples/tutorial_image_detection.ipynb)
+🧑‍🏫️ [Image Detection Tutorial](https://github.com/JdeRobot/PerceptionMetrics/blob/master/examples/tutorial_image_detection.ipynb)
 
-You can check the [`examples` directory](https://github.com/JdeRobot/DetectionMetrics/tree/master/examples) for inspiration. If you are using *poetry*, you can run the scripts provided either by activating the created environment using `poetry shell` or directly running `poetry run python examples/<some_python_script.py>`.
+You can check the [`examples` directory](https://github.com/JdeRobot/PerceptionMetrics/tree/master/examples) for inspiration. If you are using *poetry*, you can run the scripts provided either by activating the created environment using `poetry shell` or directly running `poetry run python examples/<some_python_script.py>`.
 
-#### [Full docs for the Python library](https://jderobot.github.io/DetectionMetrics/py_docs/_build/html/index.html)
+#### [Full docs for the Python library](https://jderobot.github.io/PerceptionMetrics/py_docs/_build/html/index.html)
 
 ## Command-line interface
-DetectionMetrics currently provides a CLI with two commands, `dm_evaluate` and `dm_batch`. Thanks to the configuration in the `pyproject.toml` file, we can simply run `poetry install` from the root directory and use them without explicitly invoking the Python files.
+PerceptionMetrics currently provides a CLI with two commands, `pm_evaluate` and `pm_batch`. Thanks to the configuration in the `pyproject.toml` file, we can simply run `poetry install` from the root directory and use them without explicitly invoking the Python files.
 
-#### `dm_evaluate`
+#### `pm_evaluate`
 Run a single evaluation job given a model and dataset configurations.
 
 **Segmentation Example:**
 ```shell
-dm_evaluate segmentation image --model_format torch --model /path/to/model.pt --model_ontology /path/to/ontology.json --model_cfg /path/to/cfg.json --dataset_format rellis3d --dataset_dir /path/to/dataset  --dataset_ontology /path/to/ontology.json --out_fname /path/to/results.csv
+pm_evaluate segmentation image --model_format torch --model /path/to/model.pt --model_ontology /path/to/ontology.json --model_cfg /path/to/cfg.json --dataset_format rellis3d --dataset_dir /path/to/dataset  --dataset_ontology /path/to/ontology.json --out_fname /path/to/results.csv
 ```
 
 **Detection Example:**
 ```shell
-dm_evaluate detection image --model_format torch --model /path/to/model.pt --model_ontology /path/to/ontology.json --model_cfg /path/to/cfg.json --dataset_format coco --dataset_dir /path/to/coco/dataset --out_fname /path/to/results.csv
+pm_evaluate detection image --model_format torch --model /path/to/model.pt --model_ontology /path/to/ontology.json --model_cfg /path/to/cfg.json --dataset_format coco --dataset_dir /path/to/coco/dataset --out_fname /path/to/results.csv
 ```
 
 Docs:
 ```shell
-Usage: dm_evaluate [OPTIONS] {segmentation|detection} {image|lidar}
+Usage: pm_evaluate [OPTIONS] {segmentation|detection} {image|lidar}
 
   Evaluate model on dataset
 
@@ -113,17 +113,17 @@ Options:
   --help                          Show this message and exit.
 ```
 
-#### `dm_batch`
+#### `pm_batch`
 Execute requested jobs sequentially. It must be configured by means of a YAML file.
 
 Example:
 ```shell
-dm_batch evaluate /path/to/batch_config.yaml
+pm_batch evaluate /path/to/batch_config.yaml
 ```
 
 Docs:
 ```shell
-Usage: dm_batch [OPTIONS] {evaluate|computational_cost} JOBS_CFG
+Usage: pm_batch [OPTIONS] {evaluate|computational_cost} JOBS_CFG
 
   Perform detection metrics jobs in batch mode
 

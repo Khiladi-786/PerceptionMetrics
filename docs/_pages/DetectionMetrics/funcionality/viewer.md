@@ -1,11 +1,11 @@
 ---
 layout: home
 title: Viewer
-permalink: /v1/functionality/viewer/
+permalink: /DetectionMetrics/functionality/viewer/
 
 
 sidebar:
-  nav: "main_v1"
+  nav: "detectionmetrics"
 ---
 
 **Viewer** tab is used to view various datasets. It reads the images and the annotation files to label them with their respective class names and displays the same.

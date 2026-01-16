@@ -1,11 +1,11 @@
 ---
 layout: home
 title: Frameworks
-permalink: /v1/resources/frameworks/
+permalink: /DetectionMetrics/resources/frameworks/
 
 
 sidebar:
-  nav: "main_v1"
+  nav: "detectionmetrics"
 ---
 
 Detection Metrics gives support for a set of different deep learning frameworks: Darknet, Tensorflow, Keras, PyTorch and Caffe.

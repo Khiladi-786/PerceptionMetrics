@@ -1,11 +1,11 @@
 ---
 layout: home
 title: Datasets
-permalink: /v1/resources/datasets/
+permalink: /DetectionMetrics/resources/datasets/
 
 
 sidebar:
-  nav: "main_v1"
+  nav: "detectionmetrics"
 ---
 
 List of supported datasets and information about then.

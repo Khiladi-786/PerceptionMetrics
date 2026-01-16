@@ -1,11 +1,11 @@
 ---
 layout: home
 title: New functionality
-permalink: /v1/resources/gsoc_19/
+permalink: /DetectionMetrics/resources/gsoc_19/
 
 
 sidebar:
-  nav: "main_v1"
+  nav: "detectionmetrics"
 ---
 
 ## Playback

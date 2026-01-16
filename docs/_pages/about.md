@@ -7,11 +7,11 @@ permalink: /about/
 
 ## Detection Metrics main maintainers:
 
-+ ### [Sergio Paniego](https://github.com/sergiopaniego)
++ ### [David Pascual-Hernández](https://github.com/dpascualhe)
 
 + ### [Sakhineti Praveena](https://github.com/SakhinetiPraveena)
 
-+ ### [David Pascual-Hernández](https://github.com/dpascualhe)
++ ### [Sergio Paniego](https://github.com/sergiopaniego)
 
 <!-- + ### [Vinay Sharma](https://github.com/vinay0410) -->
 

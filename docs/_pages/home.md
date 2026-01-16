@@ -6,32 +6,27 @@ header:
   overlay_image: /assets/images/cover/test_header_shear_3.png
   actions:
    - label: "<i class='fas fa-download'></i> Learn more and contribute"
-     url: "https://github.com/JdeRobot/DetectionMetrics"
+     url: "https://github.com/JdeRobot/PerceptionMetrics"
 excerpt:
   Unified evaluation for perception models
 ---
->&#9888;&#65039; ***DetectionMetrics v1*** website referenced in our *Sensors* paper is still available [here](https://jderobot.github.io/DetectionMetrics/v1)
+>&#9888;&#65039; PerceptionMetrics was previously known as DetectionMetrics. The original website referenced in our *Sensors* paper is still available [here](https://jderobot.github.io/PerceptionMetrics/DetectionMetrics)
 
-# What is DetectionMetrics?
-*DetectionMetrics* is a toolkit designed to unify and streamline the evaluation of perception models across different frameworks and datasets. Looking for our published ***DetectionMetrics v1***? Check out all the [relevant links](#v1) below.
+*PerceptionMetrics* is a toolkit designed to unify and streamline the evaluation of object detection and segmentation models across different sensor modalities, frameworks, and datasets. It offers multiple interfaces including a GUI for interactive analysis, a CLI for batch evaluation, and a Python library for seamless integration into your codebase. The toolkit provides consistent abstractions for models, datasets, and metrics, enabling fair, reproducible comparisons across heterogeneous perception systems.
 
-Now, we're excited to introduce ***DetectionMetrics v2***! While retaining the flexibility of our previous release, *DetectionMetrics* has been redesigned with an expanded focus on image and LiDAR segmentation, and now includes **image object detection** capabilities with an interactive GUI. As we move forward, *v2* will be the actively maintained version, featuring continued updates and enhancements to keep pace with evolving AI and computer vision technologies.
-
-<table class='centered-table'>
-    <tr>
-        <th>&#128187; <a href="https://github.com/JdeRobot/DetectionMetrics">Code</a></th>
-        <th>&#128295; <a href="/DetectionMetrics/v2/installation/">Installation</a></th>
-        <th>&#129513; <a href="/DetectionMetrics/v2/compatibility/">Compatibility</a></th>
-        <th>&#128214; <a href="/DetectionMetrics/py_docs/_build/html/index.html">Docs</a></th>
-        <th>&#128421; <a href="/DetectionMetrics/v2/gui/">GUI</a></th>
-    </tr>
+<table style='font-size:100%; margin: auto;'>
+  <tr>
+    <th>&#128187; <a href="https://github.com/JdeRobot/PerceptionMetrics">Code</a></th>
+    <th>&#128295; <a href="https://jderobot.github.io/PerceptionMetrics/installation">Installation</a></th>
+    <th>&#129513; <a href="https://jderobot.github.io/PerceptionMetrics/compatibility">Compatibility</a></th>
+    <th>&#128214; <a href="https://jderobot.github.io/PerceptionMetrics/py_docs/_build/html/index.html">Docs</a></th>
+    <th>&#128187; <a href="https://jderobot.github.io/PerceptionMetrics/gui">GUI</a></th>
+  </tr>
 </table>
 
-{% include video id="PYS57dNiDAg" provider="youtube" %}
+![diagram](docs/assets/images/perceptionmetrics_diagram.png)
 
-![diagram](../assets/images/detectionmetricsv2_diagram.png)
-
-# What's supported in DetectionMetrics
+# What's supported in PerceptionMetrics
 
 <table><thead>
   <tr>
@@ -60,17 +55,16 @@ Now, we're excited to introduce ***DetectionMetrics v2***! While retaining the f
 </tbody>
 </table>
 
-More details in the [Compatibility](/v2/compatibility) section.
+More details about the specific metrics and input/output formats required fow each framework are provided in the [Compatibility](https://jderobot.github.io/PerceptionMetrics/compatibility/) section
 
-# DetectionMetrics v1
-{: #v1}
+# DetectionMetrics
 
-Our previous release, ***DetectionMetrics v1***, introduced a versatile suite focused on object detection, supporting cross-framework evaluation and analysis. [Cite our work](#cite) if you use it in your research!
+Our previous release, ***DetectionMetrics***, introduced a versatile suite focused on object detection, supporting cross-framework evaluation and analysis. [Cite our work](#cite) if you use it in your research!
 
 <table style='font-size:100%'>
   <tr>
-    <th>&#128187; <a href="https://github.com/JdeRobot/DetectionMetrics/releases/tag/v1.0.0">Code</a></th>
-    <th>&#128214; <a href="https://jderobot.github.io/DetectionMetrics/v1">Docs</a></th>
+    <th>&#128187; <a href="https://github.com/JdeRobot/PerceptionMetrics/releases/tag/v1.0.0">Code</a></th>
+    <th>&#128214; <a href="https://jderobot.github.io/PerceptionMetrics/DetectionMetrics">Docs</a></th>
     <th>&#128011; <a href="https://hub.docker.com/r/jderobot/detection-metrics">Docker</a></th>
     <th>&#128240; <a href="https://www.mdpi.com/1424-8220/22/12/4575">Paper</a></th>
   </tr>

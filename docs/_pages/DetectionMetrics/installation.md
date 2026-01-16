@@ -1,10 +1,10 @@
 ---
 layout: home
 title: Installation
-permalink: /v1/installation/
+permalink: /DetectionMetrics/installation/
 
 sidebar:
-  nav: "main_v1"
+  nav: "detectionmetrics"
 ---
 <br>
 

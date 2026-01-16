@@ -1,11 +1,11 @@
 ---
 layout: home
 title: Detector
-permalink: /v1/functionality/detector/
+permalink: /DetectionMetrics/functionality/detector/
 
 
 sidebar:
-  nav: "main_v1"
+  nav: "detectionmetrics"
 ---
 
 **Detector** runs over and input dataset containing images and outputs the detected objects (detection dataset) providing the network weights

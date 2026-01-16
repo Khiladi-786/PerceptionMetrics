@@ -1,29 +1,27 @@
 <a href="https://mmg-ai.com/en/"><img src="https://jderobot.github.io/assets/images/logo.png" width="50" align="right" /></a>
 
-# DetectionMetrics
+# PerceptionMetrics
 ### _Unified evaluation for perception models_
 
-#### Project webpage [here](https://jderobot.github.io/DetectionMetrics)
+#### Project webpage [here](https://jderobot.github.io/PerceptionMetrics)
 
->&#9888;&#65039; ***DetectionMetrics v1*** website referenced in our *Sensors* paper is still available [here](https://jderobot.github.io/DetectionMetrics/v1)
+>&#9888;&#65039; PerceptionMetrics was previously known as DetectionMetrics. The original website referenced in our *Sensors* paper is still available [here](https://jderobot.github.io/PerceptionMetrics/DetectionMetrics)
 
-*DetectionMetrics* is a toolkit designed to unify and streamline the evaluation of perception models across different frameworks and datasets. Looking for our published ***DetectionMetrics v1***? Check out all the [relevant links](#v1) below.
-
-Now, we're excited to introduce ***DetectionMetrics v2***! While retaining the flexibility of our previous release, *DetectionMetrics* has been redesigned with an expanded focus on image and LiDAR segmentation, and now includes **image object detection** capabilities. As we move forward, *v2* will be the actively maintained version, featuring continued updates and enhancements to keep pace with evolving AI and computer vision technologies.
+*PerceptionMetrics* is a toolkit designed to unify and streamline the evaluation of object detection and segmentation models across different sensor modalities, frameworks, and datasets. It offers multiple interfaces including a GUI for interactive analysis, a CLI for batch evaluation, and a Python library for seamless integration into your codebase. The toolkit provides consistent abstractions for models, datasets, and metrics, enabling fair, reproducible comparisons across heterogeneous perception systems.
 
 <table style='font-size:100%; margin: auto;'>
   <tr>
-    <th>&#128187; <a href="https://github.com/JdeRobot/DetectionMetrics">Code</a></th>
-    <th>&#128295; <a href="https://jderobot.github.io/DetectionMetrics/v2/installation">Installation</a></th>
-    <th>&#129513; <a href="https://jderobot.github.io/DetectionMetrics/v2/compatibility">Compatibility</a></th>
-    <th>&#128214; <a href="https://jderobot.github.io/DetectionMetrics/py_docs/_build/html/index.html">Docs</a></th>
-    <th>&#128187; <a href="https://jderobot.github.io/DetectionMetrics/v2/gui">GUI</a></th>
+    <th>&#128187; <a href="https://github.com/JdeRobot/PerceptionMetrics">Code</a></th>
+    <th>&#128295; <a href="https://jderobot.github.io/PerceptionMetrics/installation">Installation</a></th>
+    <th>&#129513; <a href="https://jderobot.github.io/PerceptionMetrics/compatibility">Compatibility</a></th>
+    <th>&#128214; <a href="https://jderobot.github.io/PerceptionMetrics/py_docs/_build/html/index.html">Docs</a></th>
+    <th>&#128187; <a href="https://jderobot.github.io/PerceptionMetrics/gui">GUI</a></th>
   </tr>
 </table>
 
-![diagram](docs/assets/images/detectionmetricsv2_diagram.png)
+![diagram](docs/assets/images/perceptionmetrics_diagram.png)
 
-# What's supported in DetectionMetrics
+# What's supported in PerceptionMetrics
 
 <table><thead>
   <tr>
@@ -52,11 +50,11 @@ Now, we're excited to introduce ***DetectionMetrics v2***! While retaining the f
 </tbody>
 </table>
 
-More details about the specific metrics and input/output formats required fow each framework are provided in the [Compatibility](https://jderobot.github.io/DetectionMetrics/v2/compatibility/) section in our webpage.
+More details about the specific metrics and input/output formats required fow each framework are provided in the [Compatibility](https://jderobot.github.io/PerceptionMetrics/compatibility/) section in our webpage.
 
 
 # Installation
-In the near future, *DetectionMetrics* is planned to be deployed in PyPI. In the meantime, you can clone our repo and build the package locally using either *venv* or *Poetry*.
+In the near future, *PerceptionMetrics* is planned to be deployed in PyPI. In the meantime, you can clone our repo and build the package locally using either *venv* or *Poetry*.
 
 ### Using venv
 Create your virtual environment:
@@ -98,10 +96,10 @@ If you are using LiDAR, Open3D currently requires `torch==2.2*`.
 Some LiDAR segmentation models, such as SphereFormer and LSK3DNet, require a dedicated installation workflow. Refer to [additional_envs/INSTRUCTIONS.md](additional_envs/INSTRUCTIONS.md) for detailed setup instructions.
 
 # Usage
-DetectionMetrics can be used in three ways: through the **interactive GUI** (detection only), as a **Python library**, or via the **command-line interface** (segmentation and detection).
+PerceptionMetrics can be used in three ways: through the **interactive GUI** (detection only), as a **Python library**, or via the **command-line interface** (segmentation and detection).
 
 ## Interactive GUI
-The easiest way to get started with DetectionMetrics is through the GUI (detection tasks only):
+The easiest way to get started with PerceptionMetrics is through the GUI (detection tasks only):
 
 ```bash
 # From the project root directory
@@ -113,40 +111,40 @@ The GUI provides:
 - **Inference**: Run real-time inference on images
 - **Evaluator**: Perform comprehensive model evaluation
 
-For detailed GUI documentation, see our [GUI guide](https://jderobot.github.io/DetectionMetrics/v2/gui).
+For detailed GUI documentation, see our [GUI guide](https://jderobot.github.io/PerceptionMetrics/gui).
 
 ## Library
 
-🧑‍🏫️ [Image Segmentation Tutorial](https://github.com/JdeRobot/DetectionMetrics/blob/master/examples/tutorial_image_segmentation.ipynb)
+🧑‍🏫️ [Image Segmentation Tutorial](https://github.com/JdeRobot/PerceptionMetrics/blob/master/examples/tutorial_image_segmentation.ipynb)
 
-🧑‍🏫️ [Image Detection Tutorial](https://github.com/JdeRobot/DetectionMetrics/blob/master/examples/tutorial_image_detection.ipynb)
+🧑‍🏫️ [Image Detection Tutorial](https://github.com/JdeRobot/PerceptionMetrics/blob/master/examples/tutorial_image_detection.ipynb)
 
-🧑‍🏫️ [Image Detection Tutorial (YOLO)](https://github.com/JdeRobot/DetectionMetrics/blob/master/examples/tutorial_image_detection_yolo.ipynb)
+🧑‍🏫️ [Image Detection Tutorial (YOLO)](https://github.com/JdeRobot/PerceptionMetrics/blob/master/examples/tutorial_image_detection_yolo.ipynb)
 
 You can check the `examples` directory for further inspiration. If you are using *poetry*, you can run the scripts provided either by activating the created environment using `poetry shell` or directly running `poetry run python examples/<some_python_script.py>`.
 
 ## Command-line interface
-DetectionMetrics provides a CLI with two commands, `dm_evaluate` and `dm_batch`. Thanks to the configuration in the `pyproject.toml` file, we can simply run `poetry install` from the root directory and use them without explicitly invoking the Python files. More details are provided in [DetectionMetrics website](https://jderobot.github.io/DetectionMetrics/v2/usage/#command-line-interface).
+PerceptionMetrics provides a CLI with two commands, `pm_evaluate` and `pm_batch`. Thanks to the configuration in the `pyproject.toml` file, we can simply run `poetry install` from the root directory and use them without explicitly invoking the Python files. More details are provided in [PerceptionMetrics website](https://jderobot.github.io/PerceptionMetrics/usage/#command-line-interface).
 
 ### Example Usage
 **Segmentation:**
 ```bash
-dm_evaluate segmentation image --model_format torch --model /path/to/model.pt --model_ontology /path/to/ontology.json --model_cfg /path/to/cfg.json --dataset_format rellis3d --dataset_dir /path/to/dataset --dataset_ontology /path/to/ontology.json --out_fname /path/to/results.csv
+pm_evaluate segmentation image --model_format torch --model /path/to/model.pt --model_ontology /path/to/ontology.json --model_cfg /path/to/cfg.json --dataset_format rellis3d --dataset_dir /path/to/dataset --dataset_ontology /path/to/ontology.json --out_fname /path/to/results.csv
 ```
 
 **Detection:**
 ```bash
-dm_evaluate detection image --model_format torch --model /path/to/model.pt --model_ontology /path/to/ontology.json --model_cfg /path/to/cfg.json --dataset_format coco --dataset_dir /path/to/coco/dataset --out_fname /path/to/results.csv
+pm_evaluate detection image --model_format torch --model /path/to/model.pt --model_ontology /path/to/ontology.json --model_cfg /path/to/cfg.json --dataset_format coco --dataset_dir /path/to/coco/dataset --out_fname /path/to/results.csv
 ```
 
-<h1 id="v1">DetectionMetrics v1</h1>
+<h1 id="DetectionMetrics">DetectionMetrics</h1>
 
-Our previous release, ***DetectionMetrics v1***, introduced a versatile suite focused on object detection, supporting cross-framework evaluation and analysis. [Cite our work](#cite) if you use it in your research!
+Our previous release, ***DetectionMetrics***, introduced a versatile suite focused on object detection, supporting cross-framework evaluation and analysis. [Cite our work](#cite) if you use it in your research!
 
 <table style='font-size:100%'>
   <tr>
-    <th>&#128187; <a href="https://github.com/JdeRobot/DetectionMetrics/releases/tag/v1.0.0">Code</a></th>
-    <th>&#128214; <a href="https://jderobot.github.io/DetectionMetrics/v1">Docs</a></th>
+    <th>&#128187; <a href="https://github.com/JdeRobot/PerceptionMetrics/releases/tag/v1.0.0">Code</a></th>
+    <th>&#128214; <a href="https://jderobot.github.io/PerceptionMetrics/DetectionMetrics">Docs</a></th>
     <th>&#128011; <a href="https://hub.docker.com/r/jderobot/detection-metrics">Docker</a></th>
     <th>&#128240; <a href="https://www.mdpi.com/1424-8220/22/12/4575">Paper</a></th>
   </tr>
@@ -171,7 +169,7 @@ Our previous release, ***DetectionMetrics v1***, introduced a versatile suite fo
 ```
 
 # How to Contribute
-_To make your first contribution, follow this [Guide](https://github.com/JdeRobot/DetectionMetrics/blob/master/CONTRIBUTING.md)._
+_To make your first contribution, follow this [Guide](https://github.com/JdeRobot/PerceptionMetrics/blob/master/CONTRIBUTING.md)._
 
 # Acknowledgements
 LiDAR segmentation support is built upon open-source work from [Open3D-ML](https://github.com/isl-org/Open3D-ML), [mmdetection3d](https://github.com/open-mmlab/mmdetection3d), [SphereFormer](https://github.com/dvlab-research/SphereFormer), and [LSK3DNet](https://github.com/FengZicai/LSK3DNet).
