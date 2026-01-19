@@ -285,13 +285,13 @@
 <dd><p>Collate function for batching samples</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>samples</strong> (<em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a><em>]</em>) – list of sample dictionaries</p>
+<dd class="field-odd"><p><strong>samples</strong> (<em>List</em><em>[</em><em>dict</em><em>]</em>) – list of sample dictionaries</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>collated batch dictionary</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a></p>
+<dd class="field-odd"><p>dict</p>
 </dd>
 </dl>
 </dd></dl>
@@ -309,20 +309,20 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>points_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – filename of the point cloud</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – model configuration</p></li>
-<li><p><strong>label_fname</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – filename of the semantic label, defaults to None</p></li>
-<li><p><strong>name</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – sample name, defaults to None</p></li>
-<li><p><strong>idx</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>, </em><em>optional</em>) – sample numerical index, defaults to None</p></li>
-<li><p><strong>has_intensity</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – whether the point cloud has intensity values, defaults to True</p></li>
-<li><p><strong>measure_processing_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – whether to measure processing time, defaults to False</p></li>
+<li><p><strong>points_fname</strong> (<em>str</em>) – filename of the point cloud</p></li>
+<li><p><strong>model_cfg</strong> (<em>dict</em>) – model configuration</p></li>
+<li><p><strong>label_fname</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – filename of the semantic label, defaults to None</p></li>
+<li><p><strong>name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – sample name, defaults to None</p></li>
+<li><p><strong>idx</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em><em>, </em><em>optional</em>) – sample numerical index, defaults to None</p></li>
+<li><p><strong>has_intensity</strong> (<em>bool</em><em>, </em><em>optional</em>) – whether the point cloud has intensity values, defaults to True</p></li>
+<li><p><strong>measure_processing_time</strong> (<em>bool</em><em>, </em><em>optional</em>) – whether to measure processing time, defaults to False</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>sample data dictionary and processing time dictionary (if measured)</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Tuple[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>, Optional[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>]]</p>
+<dd class="field-odd"><p>Tuple[dict, Optional[dict]]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -334,18 +334,18 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – sample data dictionary</p></li>
+<li><p><strong>sample</strong> (<em>dict</em>) – sample data dictionary</p></li>
 <li><p><strong>model</strong> (<em>torch.nn.Module</em>) – LSK3DNet model</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – model configuration</p></li>
-<li><p><strong>ignore_index</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>]</em><em>, </em><em>optional</em>) – list of class indices to ignore during inference, defaults to None</p></li>
-<li><p><strong>measure_processing_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – whether to measure processing time, defaults to False</p></li>
+<li><p><strong>model_cfg</strong> (<em>dict</em>) – model configuration</p></li>
+<li><p><strong>ignore_index</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>int</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – list of class indices to ignore during inference, defaults to None</p></li>
+<li><p><strong>measure_processing_time</strong> (<em>bool</em><em>, </em><em>optional</em>) – whether to measure processing time, defaults to False</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>tuple of (predictions, labels, names) and processing time dictionary (if measured)</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Tuple[Tuple[torch.Tensor, Optional[torch.Tensor], List[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)">str</a>]], Optional[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>]]</p>
+<dd class="field-odd"><p>Tuple[Tuple[torch.Tensor, Optional[torch.Tensor], List[str]], Optional[dict]]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -366,20 +366,20 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>points_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – filename of the point cloud</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – model configuration</p></li>
-<li><p><strong>label_fname</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – filename of the semantic label, defaults to None</p></li>
-<li><p><strong>name</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – sample name, defaults to None</p></li>
-<li><p><strong>idx</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>, </em><em>optional</em>) – sample numerical index, defaults to None</p></li>
-<li><p><strong>has_intensity</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – whether the point cloud has intensity values, defaults to True</p></li>
-<li><p><strong>measure_processing_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – whether to measure processing time, defaults to False</p></li>
+<li><p><strong>points_fname</strong> (<em>str</em>) – filename of the point cloud</p></li>
+<li><p><strong>model_cfg</strong> (<em>dict</em>) – model configuration</p></li>
+<li><p><strong>label_fname</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – filename of the semantic label, defaults to None</p></li>
+<li><p><strong>name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – sample name, defaults to None</p></li>
+<li><p><strong>idx</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em><em>, </em><em>optional</em>) – sample numerical index, defaults to None</p></li>
+<li><p><strong>has_intensity</strong> (<em>bool</em><em>, </em><em>optional</em>) – whether the point cloud has intensity values, defaults to True</p></li>
+<li><p><strong>measure_processing_time</strong> (<em>bool</em><em>, </em><em>optional</em>) – whether to measure processing time, defaults to False</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>sample data and optionally processing time</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Tuple[ <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>, Optional[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>] ]</p>
+<dd class="field-odd"><p>Tuple[ dict, Optional[dict] ]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -391,18 +391,18 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – sample data dictionary</p></li>
+<li><p><strong>sample</strong> (<em>dict</em>) – sample data dictionary</p></li>
 <li><p><strong>model</strong> (<em>torch.nn.Module</em>) – mmdetection3D model</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – model configuration</p></li>
-<li><p><strong>measure_processing_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – whether to measure processing time, defaults to False</p></li>
-<li><p><strong>ignore_index</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>]</em><em>, </em><em>optional</em>) – list of class indices to ignore during inference, defaults to None</p></li>
+<li><p><strong>model_cfg</strong> (<em>dict</em>) – model configuration</p></li>
+<li><p><strong>measure_processing_time</strong> (<em>bool</em><em>, </em><em>optional</em>) – whether to measure processing time, defaults to False</p></li>
+<li><p><strong>ignore_index</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>int</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – list of class indices to ignore during inference, defaults to None</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>predictions, labels (if available), sample names and optionally processing time</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Tuple[ Tuple[torch.Tensor, Optional[torch.Tensor], Optional[List[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)">str</a>]]], Optional[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>] ]</p>
+<dd class="field-odd"><p>Tuple[ Tuple[torch.Tensor, Optional[torch.Tensor], Optional[List[str]]], Optional[dict] ]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -416,13 +416,13 @@
 <dd><p>Collate function for batching samples</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>samples</strong> (<em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a><em>]</em>) – list of sample dictionaries</p>
+<dd class="field-odd"><p><strong>samples</strong> (<em>List</em><em>[</em><em>dict</em><em>]</em>) – list of sample dictionaries</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>collated batch dictionary</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a></p>
+<dd class="field-odd"><p>dict</p>
 </dd>
 </dl>
 </dd></dl>
@@ -434,20 +434,20 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>points_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – filename of the point cloud</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – model configuration</p></li>
-<li><p><strong>label_fname</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – filename of the semantic label, defaults to None</p></li>
-<li><p><strong>name</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – sample name, defaults to None</p></li>
-<li><p><strong>idx</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>, </em><em>optional</em>) – sample numerical index, defaults to None</p></li>
-<li><p><strong>has_intensity</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – whether the point cloud has intensity values, defaults to True</p></li>
-<li><p><strong>measure_processing_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – whether to measure processing time, defaults to False</p></li>
+<li><p><strong>points_fname</strong> (<em>str</em>) – filename of the point cloud</p></li>
+<li><p><strong>model_cfg</strong> (<em>dict</em>) – model configuration</p></li>
+<li><p><strong>label_fname</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – filename of the semantic label, defaults to None</p></li>
+<li><p><strong>name</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – sample name, defaults to None</p></li>
+<li><p><strong>idx</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em><em>, </em><em>optional</em>) – sample numerical index, defaults to None</p></li>
+<li><p><strong>has_intensity</strong> (<em>bool</em><em>, </em><em>optional</em>) – whether the point cloud has intensity values, defaults to True</p></li>
+<li><p><strong>measure_processing_time</strong> (<em>bool</em><em>, </em><em>optional</em>) – whether to measure processing time, defaults to False</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>sample data dictionary and processing time dictionary (if measured)</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Tuple[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>, Optional[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>]]</p>
+<dd class="field-odd"><p>Tuple[dict, Optional[dict]]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -459,18 +459,18 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – sample data dictionary</p></li>
+<li><p><strong>sample</strong> (<em>dict</em>) – sample data dictionary</p></li>
 <li><p><strong>model</strong> (<em>torch.nn.Module</em>) – SphereFormer model</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – model configuration</p></li>
-<li><p><strong>measure_processing_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – whether to measure processing time, defaults to False</p></li>
-<li><p><strong>ignore_index</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>]</em><em>, </em><em>optional</em>) – list of class indices to ignore during inference, defaults to None</p></li>
+<li><p><strong>model_cfg</strong> (<em>dict</em>) – model configuration</p></li>
+<li><p><strong>measure_processing_time</strong> (<em>bool</em><em>, </em><em>optional</em>) – whether to measure processing time, defaults to False</p></li>
+<li><p><strong>ignore_index</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>int</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – list of class indices to ignore during inference, defaults to None</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>tuple of (predictions, labels, names) and processing time dictionary (if measured)</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Tuple[Tuple[torch.Tensor, Optional[torch.Tensor], List[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)">str</a>]], Optional[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>]]</p>
+<dd class="field-odd"><p>Tuple[Tuple[torch.Tensor, Optional[torch.Tensor], List[str]], Optional[dict]]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -485,15 +485,15 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>output</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – Dictionary with keys ‘boxes’, ‘labels’, and ‘scores’.</p></li>
-<li><p><strong>confidence_threshold</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><em>float</em></a>) – Confidence threshold to filter boxes.</p></li>
+<li><p><strong>output</strong> (<em>dict</em>) – Dictionary with keys ‘boxes’, ‘labels’, and ‘scores’.</p></li>
+<li><p><strong>confidence_threshold</strong> (<em>float</em>) – Confidence threshold to filter boxes.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Dictionary with keys ‘boxes’, ‘labels’, and ‘scores’.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a></p>
+<dd class="field-odd"><p>dict</p>
 </dd>
 </dl>
 </dd></dl>
@@ -509,15 +509,15 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>output</strong> (<em>torch.Tensor</em>) – Tensor of shape [num_classes + 4, num_anchors] containing bounding box predictions and class logits.</p></li>
-<li><p><strong>confidence_threshold</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><em>float</em></a>) – Confidence threshold to filter boxes.</p></li>
-<li><p><strong>nms_threshold</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><em>float</em></a>) – IoU threshold for Non-Maximum Suppression (NMS).</p></li>
+<li><p><strong>confidence_threshold</strong> (<em>float</em>) – Confidence threshold to filter boxes.</p></li>
+<li><p><strong>nms_threshold</strong> (<em>float</em>) – IoU threshold for Non-Maximum Suppression (NMS).</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Dictionary with keys ‘boxes’, ‘labels’, and ‘scores’.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a></p>
+<dd class="field-odd"><p>dict</p>
 </dd>
 </dl>
 </dd></dl>

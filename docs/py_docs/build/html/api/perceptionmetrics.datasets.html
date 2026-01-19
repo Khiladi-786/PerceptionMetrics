@@ -260,9 +260,9 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>annotation_file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Path to the COCO-format JSON annotation file</p></li>
-<li><p><strong>image_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Path to the directory containing image files</p></li>
-<li><p><strong>split</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Dataset split name (e.g., “train”, “val”, “test”)</p></li>
+<li><p><strong>annotation_file</strong> (<em>str</em>) – Path to the COCO-format JSON annotation file</p></li>
+<li><p><strong>image_dir</strong> (<em>str</em>) – Path to the directory containing image files</p></li>
+<li><p><strong>split</strong> (<em>str</em>) – Dataset split name (e.g., “train”, “val”, “test”)</p></li>
 </ul>
 </dd>
 </dl>
@@ -275,10 +275,10 @@ The COCO object maintains an internal index that allows for very fast
 annotation retrieval without needing a separate cache.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>fname</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></span>) – str (image_id in string form)</p>
+<dd class="field-odd"><p><strong>fname</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – str (image_id in string form)</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.14)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>]], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]]</span></p>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]], <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]]</span></p>
 </dd>
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Tuple of (boxes, category_indices)</p>
@@ -295,17 +295,17 @@ annotation retrieval without needing a separate cache.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>annotation_file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Path to the COCO-format JSON annotation file</p></li>
-<li><p><strong>image_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Path to the directory containing image files</p></li>
+<li><p><strong>annotation_file</strong> (<em>str</em>) – Path to the COCO-format JSON annotation file</p></li>
+<li><p><strong>image_dir</strong> (<em>str</em>) – Path to the directory containing image files</p></li>
 <li><p><strong>coco_obj</strong> (<em>COCO</em>) – Optional pre-loaded COCO object to reuse</p></li>
-<li><p><strong>split</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Dataset split name (e.g., “train”, “val”, “test”)</p></li>
+<li><p><strong>split</strong> (<em>str</em>) – Dataset split name (e.g., “train”, “val”, “test”)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Dataset DataFrame and ontology dictionary</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Tuple[pd.DataFrame, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>]</p>
+<dd class="field-odd"><p>Tuple[pd.DataFrame, dict]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -321,9 +321,9 @@ annotation retrieval without needing a separate cache.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>dataset</strong> (<a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.3.3)"><em>DataFrame</em></a>)</p></li>
-<li><p><strong>dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>)</p></li>
-<li><p><strong>ontology</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>)</p></li>
+<li><p><strong>dataset</strong> (<em>DataFrame</em>)</p></li>
+<li><p><strong>dataset_dir</strong> (<em>str</em>)</p></li>
+<li><p><strong>ontology</strong> (<em>dict</em>)</p></li>
 </ul>
 </dd>
 </dl>
@@ -333,7 +333,7 @@ annotation retrieval without needing a separate cache.</p>
 <dd><p>Count detection labels per class for given splits.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>splits</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.14)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]]</span>) – List of splits to consider</p>
+<dd class="field-odd"><p><strong>splits</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]]</span>) – List of splits to consider</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Numpy array of label counts per class</p>
@@ -347,7 +347,7 @@ annotation retrieval without needing a separate cache.</p>
 <dd><p>Read detection annotation from a file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>fname</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></span>) – Annotation file name</p>
+<dd class="field-odd"><p><strong>fname</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – Annotation file name</p>
 </dd>
 </dl>
 </dd></dl>
@@ -362,9 +362,9 @@ annotation retrieval without needing a separate cache.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>dataset</strong> (<a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.3.3)"><em>DataFrame</em></a>)</p></li>
-<li><p><strong>dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>)</p></li>
-<li><p><strong>ontology</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>)</p></li>
+<li><p><strong>dataset</strong> (<em>DataFrame</em>)</p></li>
+<li><p><strong>dataset_dir</strong> (<em>str</em>)</p></li>
+<li><p><strong>ontology</strong> (<em>dict</em>)</p></li>
 </ul>
 </dd>
 </dl>
@@ -381,7 +381,7 @@ annotation retrieval without needing a separate cache.</p>
 <p>Override this based on annotation format (e.g., COCO JSON, XML, TXT).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>fname</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></span>) – Annotation filename</p>
+<dd class="field-odd"><p><strong>fname</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – Annotation filename</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Parsed annotations (e.g., list of dicts)</p>
@@ -399,10 +399,10 @@ annotation retrieval without needing a separate cache.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>dataset</strong> (<a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.3.3)"><em>DataFrame</em></a>)</p></li>
-<li><p><strong>dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>)</p></li>
-<li><p><strong>ontology</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>)</p></li>
-<li><p><strong>is_kitti_format</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a>)</p></li>
+<li><p><strong>dataset</strong> (<em>DataFrame</em>)</p></li>
+<li><p><strong>dataset_dir</strong> (<em>str</em>)</p></li>
+<li><p><strong>ontology</strong> (<em>dict</em>)</p></li>
+<li><p><strong>is_kitti_format</strong> (<em>bool</em>)</p></li>
 </ul>
 </dd>
 </dl>
@@ -419,7 +419,7 @@ annotation retrieval without needing a separate cache.</p>
 <p>For example, read KITTI format label files or custom format.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>fname</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></span>) – Annotation file path</p>
+<dd class="field-odd"><p><strong>fname</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – Annotation file path</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Parsed annotations (e.g., list of dicts)</p>
@@ -439,7 +439,7 @@ annotation retrieval without needing a separate cache.</p>
 <p>Specific class for GAIA-styled image segmentation datasets</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>dataset_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Parquet dataset filename</p>
+<dd class="field-odd"><p><strong>dataset_fname</strong> (<em>str</em>) – Parquet dataset filename</p>
 </dd>
 </dl>
 </dd></dl>
@@ -451,7 +451,7 @@ annotation retrieval without needing a separate cache.</p>
 <p>Specific class for GAIA-styled LiDAR segmentation datasets</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>dataset_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Parquet dataset filename</p>
+<dd class="field-odd"><p><strong>dataset_fname</strong> (<em>str</em>) – Parquet dataset filename</p>
 </dd>
 </dl>
 </dd></dl>
@@ -462,13 +462,13 @@ annotation retrieval without needing a separate cache.</p>
 <dd><p>Build dataset and ontology dictionaries from GAIA-like dataset structure</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>dataset_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Parquet dataset filename</p>
+<dd class="field-odd"><p><strong>dataset_fname</strong> (<em>str</em>) – Parquet dataset filename</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Dataset dataframe and directory, and onotology</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Tuple[pd.DataFrame, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)">str</a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>]</p>
+<dd class="field-odd"><p>Tuple[pd.DataFrame, str, dict]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -484,12 +484,12 @@ annotation retrieval without needing a separate cache.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>data_suffix</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – File suffix to be used to filter data</p></li>
-<li><p><strong>label_suffix</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – File suffix to be used to filter labels</p></li>
-<li><p><strong>ontology_fname</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></span>) – JSON file containing either a list of classes or a dictionary with class names as keys and class indexes + rgb as values</p></li>
-<li><p><strong>train_dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory containing training data</p></li>
-<li><p><strong>val_dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Directory containing validation data, defaults to None</p></li>
-<li><p><strong>test_dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Directory containing test data, defaults to None</p></li>
+<li><p><strong>data_suffix</strong> (<em>str</em>) – File suffix to be used to filter data</p></li>
+<li><p><strong>label_suffix</strong> (<em>str</em>) – File suffix to be used to filter labels</p></li>
+<li><p><strong>ontology_fname</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – JSON file containing either a list of classes or a dictionary with class names as keys and class indexes + rgb as values</p></li>
+<li><p><strong>train_dataset_dir</strong> (<em>str</em>) – Directory containing training data</p></li>
+<li><p><strong>val_dataset_dir</strong> (<em>str</em><em>, </em><em>optional</em>) – Directory containing validation data, defaults to None</p></li>
+<li><p><strong>test_dataset_dir</strong> (<em>str</em><em>, </em><em>optional</em>) – Directory containing test data, defaults to None</p></li>
 </ul>
 </dd>
 </dl>
@@ -503,12 +503,12 @@ annotation retrieval without needing a separate cache.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>data_suffix</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – File suffix to be used to filter data</p></li>
-<li><p><strong>label_suffix</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – File suffix to be used to filter labels</p></li>
-<li><p><strong>ontology_fname</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></span>) – JSON file containing either a list of classes or a dictionary with class names as keys and class indexes + rgb as values</p></li>
-<li><p><strong>train_dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory containing training data</p></li>
-<li><p><strong>val_dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Directory containing validation data, defaults to None</p></li>
-<li><p><strong>test_dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Directory containing test data, defaults to None</p></li>
+<li><p><strong>data_suffix</strong> (<em>str</em>) – File suffix to be used to filter data</p></li>
+<li><p><strong>label_suffix</strong> (<em>str</em>) – File suffix to be used to filter labels</p></li>
+<li><p><strong>ontology_fname</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – JSON file containing either a list of classes or a dictionary with class names as keys and class indexes + rgb as values</p></li>
+<li><p><strong>train_dataset_dir</strong> (<em>str</em>) – Directory containing training data</p></li>
+<li><p><strong>val_dataset_dir</strong> (<em>str</em><em>, </em><em>optional</em>) – Directory containing validation data, defaults to None</p></li>
+<li><p><strong>test_dataset_dir</strong> (<em>str</em><em>, </em><em>optional</em>) – Directory containing test data, defaults to None</p></li>
 </ul>
 </dd>
 </dl>
@@ -521,19 +521,19 @@ annotation retrieval without needing a separate cache.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>train_dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory containing training data</p></li>
-<li><p><strong>data_suffix</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – File suffix to be used to filter data</p></li>
-<li><p><strong>label_suffix</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – File suffix to be used to filter labels</p></li>
-<li><p><strong>ontology_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – JSON file containing either a list of classes or a dictionary with class names as keys and class indexes + rgb as values</p></li>
-<li><p><strong>val_dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Directory containing validation data, defaults to None</p></li>
-<li><p><strong>test_dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Directory containing test data, defaults to None</p></li>
+<li><p><strong>train_dataset_dir</strong> (<em>str</em>) – Directory containing training data</p></li>
+<li><p><strong>data_suffix</strong> (<em>str</em>) – File suffix to be used to filter data</p></li>
+<li><p><strong>label_suffix</strong> (<em>str</em>) – File suffix to be used to filter labels</p></li>
+<li><p><strong>ontology_fname</strong> (<em>str</em>) – JSON file containing either a list of classes or a dictionary with class names as keys and class indexes + rgb as values</p></li>
+<li><p><strong>val_dataset_dir</strong> (<em>str</em><em>, </em><em>optional</em>) – Directory containing validation data, defaults to None</p></li>
+<li><p><strong>test_dataset_dir</strong> (<em>str</em><em>, </em><em>optional</em>) – Directory containing test data, defaults to None</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Dataset and onotology</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Tuple[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>]</p>
+<dd class="field-odd"><p>Tuple[dict, dict]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -544,13 +544,13 @@ annotation retrieval without needing a separate cache.</p>
 <dd><p>Uses the given class index as seed to generate a random RGB color</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>class_index</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a>) – Class index to be used as seed</p>
+<dd class="field-odd"><p><strong>class_index</strong> (<em>int</em>) – Class index to be used as seed</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>random RGB color</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Tuple[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)">int</a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)">int</a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)">int</a>]</p>
+<dd class="field-odd"><p>Tuple[int, int, int]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -570,9 +570,9 @@ test  -&gt; <a class="reference external" href="https://goose-dataset.de/storage
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>train_dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory containing training data</p></li>
-<li><p><strong>val_dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Directory containing validation data, defaults to None</p></li>
-<li><p><strong>test_dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Directory containing test data, defaults to None</p></li>
+<li><p><strong>train_dataset_dir</strong> (<em>str</em>) – Directory containing training data</p></li>
+<li><p><strong>val_dataset_dir</strong> (<em>str</em><em>, </em><em>optional</em>) – Directory containing validation data, defaults to None</p></li>
+<li><p><strong>test_dataset_dir</strong> (<em>str</em><em>, </em><em>optional</em>) – Directory containing test data, defaults to None</p></li>
 </ul>
 </dd>
 </dl>
@@ -590,10 +590,10 @@ test  -&gt; <a class="reference external" href="https://goose-dataset.de/storage
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>train_dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory containing training data</p></li>
-<li><p><strong>val_dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Directory containing validation data, defaults to None</p></li>
-<li><p><strong>test_dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Directory containing test data, defaults to None</p></li>
-<li><p><strong>is_goose_ex</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether the dataset is GOOSE Ex or GOOSE, defaults to False</p></li>
+<li><p><strong>train_dataset_dir</strong> (<em>str</em>) – Directory containing training data</p></li>
+<li><p><strong>val_dataset_dir</strong> (<em>str</em><em>, </em><em>optional</em>) – Directory containing validation data, defaults to None</p></li>
+<li><p><strong>test_dataset_dir</strong> (<em>str</em><em>, </em><em>optional</em>) – Directory containing test data, defaults to None</p></li>
+<li><p><strong>is_goose_ex</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether the dataset is GOOSE Ex or GOOSE, defaults to False</p></li>
 </ul>
 </dd>
 </dl>
@@ -606,20 +606,20 @@ test  -&gt; <a class="reference external" href="https://goose-dataset.de/storage
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>train_dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory containing training data</p></li>
-<li><p><strong>data_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Data to be read (e.g. images or lidar)</p></li>
-<li><p><strong>data_suffix</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – File suffix to be used to filter data (e.g., windshield_vis.png or vls128.bin)</p></li>
-<li><p><strong>label_suffix</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – File suffix to be used to filter labels (e.g., vis_labelids.png or goose.label)</p></li>
-<li><p><strong>val_dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Directory containing validation data, defaults to None</p></li>
-<li><p><strong>test_dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Directory containing test data, defaults to None</p></li>
-<li><p><strong>is_goose_ex</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether the dataset is GOOSE Ex or GOOSE, defaults to False</p></li>
+<li><p><strong>train_dataset_dir</strong> (<em>str</em>) – Directory containing training data</p></li>
+<li><p><strong>data_type</strong> (<em>str</em>) – Data to be read (e.g. images or lidar)</p></li>
+<li><p><strong>data_suffix</strong> (<em>str</em>) – File suffix to be used to filter data (e.g., windshield_vis.png or vls128.bin)</p></li>
+<li><p><strong>label_suffix</strong> (<em>str</em>) – File suffix to be used to filter labels (e.g., vis_labelids.png or goose.label)</p></li>
+<li><p><strong>val_dataset_dir</strong> (<em>str</em><em>, </em><em>optional</em>) – Directory containing validation data, defaults to None</p></li>
+<li><p><strong>test_dataset_dir</strong> (<em>str</em><em>, </em><em>optional</em>) – Directory containing test data, defaults to None</p></li>
+<li><p><strong>is_goose_ex</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether the dataset is GOOSE Ex or GOOSE, defaults to False</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Dataset and onotology</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Tuple[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>]</p>
+<dd class="field-odd"><p>Tuple[dict, dict]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -630,14 +630,14 @@ test  -&gt; <a class="reference external" href="https://goose-dataset.de/storage
 <dl class="py class">
 <dt class="sig sig-object py" id="perceptionmetrics.datasets.perception.PerceptionDataset">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">perceptionmetrics.datasets.perception.</span></span><span class="sig-name descname"><span class="pre">PerceptionDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ontology</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/perceptionmetrics/datasets/perception.html#PerceptionDataset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#perceptionmetrics.datasets.perception.PerceptionDataset" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></a></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
 <p>Abstract perception dataset class.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dataset</strong> (<em>pd.DataFrame</em>) – Segmentation/Detection dataset as a pandas DataFrame</p></li>
-<li><p><strong>dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Dataset root directory</p></li>
-<li><p><strong>ontology</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – Dataset ontology definition</p></li>
+<li><p><strong>dataset_dir</strong> (<em>str</em>) – Dataset root directory</p></li>
+<li><p><strong>ontology</strong> (<em>dict</em>) – Dataset ontology definition</p></li>
 </ul>
 </dd>
 </dl>
@@ -658,7 +658,7 @@ test  -&gt; <a class="reference external" href="https://goose-dataset.de/storage
 <dd><p>Get label count for each class in the dataset</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>splits</strong> (<em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – Dataset splits to consider, defaults to [“train”, “val”]</p>
+<dd class="field-odd"><p><strong>splits</strong> (<em>List</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Dataset splits to consider, defaults to [“train”, “val”]</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Label count for the dataset</p>
@@ -693,9 +693,9 @@ ontology -&gt; <a class="reference external" href="https://drive.google.com/file
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory where both RGB images and annotations have been extracted to</p></li>
-<li><p><strong>split_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory where train, val, and test files (.lst) have been extracted to</p></li>
-<li><p><strong>ontology_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – YAML file contained in the ontology compressed directory</p></li>
+<li><p><strong>dataset_dir</strong> (<em>str</em>) – Directory where both RGB images and annotations have been extracted to</p></li>
+<li><p><strong>split_dir</strong> (<em>str</em>) – Directory where train, val, and test files (.lst) have been extracted to</p></li>
+<li><p><strong>ontology_fname</strong> (<em>str</em>) – YAML file contained in the ontology compressed directory</p></li>
 </ul>
 </dd>
 </dl>
@@ -714,9 +714,9 @@ ontology -&gt; <a class="reference external" href="https://drive.google.com/file
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory where both points and labels have been extracted to</p></li>
-<li><p><strong>split_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory where train, val, and test files (.lst) have been extracted to</p></li>
-<li><p><strong>ontology_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – YAML file contained in the ontology compressed directory</p></li>
+<li><p><strong>dataset_dir</strong> (<em>str</em>) – Directory where both points and labels have been extracted to</p></li>
+<li><p><strong>split_dir</strong> (<em>str</em>) – Directory where train, val, and test files (.lst) have been extracted to</p></li>
+<li><p><strong>ontology_fname</strong> (<em>str</em>) – YAML file contained in the ontology compressed directory</p></li>
 </ul>
 </dd>
 </dl>
@@ -729,16 +729,16 @@ ontology -&gt; <a class="reference external" href="https://drive.google.com/file
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory where both RGB images and annotations have been extracted to</p></li>
-<li><p><strong>split_fnames</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></span>) – Dictionary that contains the paths where train, val, and test split files (.lst) have been extracted to</p></li>
-<li><p><strong>ontology_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – YAML file contained in the ontology compressed directory</p></li>
+<li><p><strong>dataset_dir</strong> (<em>str</em>) – Directory where both RGB images and annotations have been extracted to</p></li>
+<li><p><strong>split_fnames</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></span>) – Dictionary that contains the paths where train, val, and test split files (.lst) have been extracted to</p></li>
+<li><p><strong>ontology_fname</strong> (<em>str</em>) – YAML file contained in the ontology compressed directory</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Dataset and onotology</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Tuple[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>]</p>
+<dd class="field-odd"><p>Tuple[dict, dict]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -754,10 +754,10 @@ ontology -&gt; <a class="reference external" href="https://drive.google.com/file
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>images_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory containing images</p></li>
-<li><p><strong>labels_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory containing labels (in RGB format)</p></li>
-<li><p><strong>ontology_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – text file containing the dataset ontology (RUGD_annotation-colormap.txt)</p></li>
-<li><p><strong>split_sequences</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a><em>, </em><em>optional</em>) – Dictionary containing the split sequences for train, val, and test, defaults to DEFAULT_SPLIT</p></li>
+<li><p><strong>images_dir</strong> (<em>str</em>) – Directory containing images</p></li>
+<li><p><strong>labels_dir</strong> (<em>str</em>) – Directory containing labels (in RGB format)</p></li>
+<li><p><strong>ontology_fname</strong> (<em>str</em>) – text file containing the dataset ontology (RUGD_annotation-colormap.txt)</p></li>
+<li><p><strong>split_sequences</strong> (<em>dict</em><em>, </em><em>optional</em>) – Dictionary containing the split sequences for train, val, and test, defaults to DEFAULT_SPLIT</p></li>
 </ul>
 </dd>
 </dl>
@@ -770,17 +770,17 @@ ontology -&gt; <a class="reference external" href="https://drive.google.com/file
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>data_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory containing data</p></li>
-<li><p><strong>labels_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory containing labels (in RGB format)</p></li>
-<li><p><strong>ontology_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – text file containing the dataset ontology (RUGD_annotation-colormap.txt)</p></li>
-<li><p><strong>split_sequences</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – Dictionary containing the split sequences for train, val, and test</p></li>
+<li><p><strong>data_dir</strong> (<em>str</em>) – Directory containing data</p></li>
+<li><p><strong>labels_dir</strong> (<em>str</em>) – Directory containing labels (in RGB format)</p></li>
+<li><p><strong>ontology_fname</strong> (<em>str</em>) – text file containing the dataset ontology (RUGD_annotation-colormap.txt)</p></li>
+<li><p><strong>split_sequences</strong> (<em>dict</em>) – Dictionary containing the split sequences for train, val, and test</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Dataset and onotology</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Tuple[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>]</p>
+<dd class="field-odd"><p>Tuple[dict, dict]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -797,9 +797,9 @@ ontology -&gt; <a class="reference external" href="https://drive.google.com/file
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dataset</strong> (<em>pd.DataFrame</em>) – Image segmentation dataset as a pandas DataFrame</p></li>
-<li><p><strong>dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Dataset root directory</p></li>
-<li><p><strong>ontology</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – Dataset ontology definition</p></li>
-<li><p><strong>is_label_rgb</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether the labels are in RGB format or not, defaults to False</p></li>
+<li><p><strong>dataset_dir</strong> (<em>str</em>) – Dataset root directory</p></li>
+<li><p><strong>ontology</strong> (<em>dict</em>) – Dataset ontology definition</p></li>
+<li><p><strong>is_label_rgb</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether the labels are in RGB format or not, defaults to False</p></li>
 </ul>
 </dd>
 </dl>
@@ -810,12 +810,12 @@ ontology -&gt; <a class="reference external" href="https://drive.google.com/file
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>outdir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory where Parquet and images files will be stored</p></li>
-<li><p><strong>new_ontology</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – Target ontology definition</p></li>
-<li><p><strong>ontology_translation</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a><em>]</em><em>, </em><em>optional</em>) – Ontology translation dictionary, defaults to None</p></li>
-<li><p><strong>classes_to_remove</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>]</em><em>, </em><em>optional</em>) – Classes to remove from the old ontology, defaults to []</p></li>
-<li><p><strong>resize</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>]</em><em>, </em><em>optional</em>) – Resize images and labels to the given dimensions, defaults to None</p></li>
-<li><p><strong>include_label_count</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to include class weights in the dataset, defaults to True</p></li>
+<li><p><strong>outdir</strong> (<em>str</em>) – Directory where Parquet and images files will be stored</p></li>
+<li><p><strong>new_ontology</strong> (<em>dict</em>) – Target ontology definition</p></li>
+<li><p><strong>ontology_translation</strong> (<em>Optional</em><em>[</em><em>dict</em><em>]</em><em>, </em><em>optional</em>) – Ontology translation dictionary, defaults to None</p></li>
+<li><p><strong>classes_to_remove</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – Classes to remove from the old ontology, defaults to []</p></li>
+<li><p><strong>resize</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – Resize images and labels to the given dimensions, defaults to None</p></li>
+<li><p><strong>include_label_count</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to include class weights in the dataset, defaults to True</p></li>
 </ul>
 </dd>
 </dl>
@@ -827,7 +827,7 @@ ontology -&gt; <a class="reference external" href="https://drive.google.com/file
 <dd><p>Get label count for each class in the dataset</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>splits</strong> (<em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – Dataset splits to consider, defaults to [“train”, “val”]</p>
+<dd class="field-odd"><p><strong>splits</strong> (<em>List</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Dataset splits to consider, defaults to [“train”, “val”]</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Label count for the dataset</p>
@@ -850,7 +850,7 @@ ontology -&gt; <a class="reference external" href="https://drive.google.com/file
 <dd><p>Read label from an image file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Image file containing labels</p>
+<dd class="field-odd"><p><strong>fname</strong> (<em>str</em>) – Image file containing labels</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Numpy array containing labels</p>
@@ -872,10 +872,10 @@ ontology -&gt; <a class="reference external" href="https://drive.google.com/file
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dataset</strong> (<em>pd.DataFrame</em>) – LiDAR segmentation dataset as a pandas DataFrame</p></li>
-<li><p><strong>dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Dataset root directory</p></li>
-<li><p><strong>ontology</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – Dataset ontology definition</p></li>
-<li><p><strong>is_kitti_format</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether the linked files in the dataset are stored in SemanticKITTI format or not, defaults to True</p></li>
-<li><p><strong>has_intensity</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether the point cloud files contain intensity values, defaults to True</p></li>
+<li><p><strong>dataset_dir</strong> (<em>str</em>) – Dataset root directory</p></li>
+<li><p><strong>ontology</strong> (<em>dict</em>) – Dataset ontology definition</p></li>
+<li><p><strong>is_kitti_format</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether the linked files in the dataset are stored in SemanticKITTI format or not, defaults to True</p></li>
+<li><p><strong>has_intensity</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether the point cloud files contain intensity values, defaults to True</p></li>
 </ul>
 </dd>
 </dl>
@@ -886,12 +886,12 @@ ontology -&gt; <a class="reference external" href="https://drive.google.com/file
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>outdir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory where Parquet and LiDAR files will be stored</p></li>
-<li><p><strong>new_ontology</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – Target ontology definition</p></li>
-<li><p><strong>ontology_translation</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a><em>]</em><em>, </em><em>optional</em>) – Ontology translation dictionary, defaults to None</p></li>
-<li><p><strong>classes_to_remove</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>]</em><em>, </em><em>optional</em>) – Classes to remove from the old ontology, defaults to []</p></li>
-<li><p><strong>include_label_count</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to include class weights in the dataset, defaults to True</p></li>
-<li><p><strong>remove_origin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to remove the origin from the point cloud (mostly for removing RELLIS-3D spurious points), defaults to False</p></li>
+<li><p><strong>outdir</strong> (<em>str</em>) – Directory where Parquet and LiDAR files will be stored</p></li>
+<li><p><strong>new_ontology</strong> (<em>dict</em>) – Target ontology definition</p></li>
+<li><p><strong>ontology_translation</strong> (<em>Optional</em><em>[</em><em>dict</em><em>]</em><em>, </em><em>optional</em>) – Ontology translation dictionary, defaults to None</p></li>
+<li><p><strong>classes_to_remove</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – Classes to remove from the old ontology, defaults to []</p></li>
+<li><p><strong>include_label_count</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to include class weights in the dataset, defaults to True</p></li>
+<li><p><strong>remove_origin</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to remove the origin from the point cloud (mostly for removing RELLIS-3D spurious points), defaults to False</p></li>
 </ul>
 </dd>
 </dl>
@@ -909,7 +909,7 @@ ontology -&gt; <a class="reference external" href="https://drive.google.com/file
 <dd><p>Read semantic labels. Defaults to SemanticKITTI format</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Binary file containing labels</p>
+<dd class="field-odd"><p><strong>fname</strong> (<em>str</em>) – Binary file containing labels</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Numpy arrays containing semantic labels</p>
@@ -926,7 +926,7 @@ ontology -&gt; <a class="reference external" href="https://drive.google.com/file
 <dd><p>Read point cloud. Defaults to SemanticKITTI format</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – File containing point cloud</p>
+<dd class="field-odd"><p><strong>fname</strong> (<em>str</em>) – File containing point cloud</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Numpy array containing points</p>
@@ -947,9 +947,9 @@ ontology -&gt; <a class="reference external" href="https://drive.google.com/file
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>dataset</strong> (<a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.3.3)"><em>DataFrame</em></a>)</p></li>
-<li><p><strong>dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>)</p></li>
-<li><p><strong>ontology</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>)</p></li>
+<li><p><strong>dataset</strong> (<em>DataFrame</em>)</p></li>
+<li><p><strong>dataset_dir</strong> (<em>str</em>)</p></li>
+<li><p><strong>ontology</strong> (<em>dict</em>)</p></li>
 </ul>
 </dd>
 </dl>
@@ -959,7 +959,7 @@ ontology -&gt; <a class="reference external" href="https://drive.google.com/file
 <dd><p>Read label from an image file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Image file containing labels</p>
+<dd class="field-odd"><p><strong>fname</strong> (<em>str</em>) – Image file containing labels</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Numpy array containing labels</p>
@@ -986,8 +986,8 @@ split    -&gt; <a class="reference external" href="https://github.com/csiro-robo
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory where dataset images and labels are stored (Wildscenes2D)</p></li>
-<li><p><strong>split_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory where train, val, and test files (.csv) have been extracted to</p></li>
+<li><p><strong>dataset_dir</strong> (<em>str</em>) – Directory where dataset images and labels are stored (Wildscenes2D)</p></li>
+<li><p><strong>split_dir</strong> (<em>str</em>) – Directory where train, val, and test files (.csv) have been extracted to</p></li>
 </ul>
 </dd>
 </dl>
@@ -1004,8 +1004,8 @@ split    -&gt; <a class="reference external" href="https://github.com/csiro-robo
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory where dataset images and labels are stored (Wildscenes3D)</p></li>
-<li><p><strong>split_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory where train, val, and test files (.csv) have been extracted to</p></li>
+<li><p><strong>dataset_dir</strong> (<em>str</em>) – Directory where dataset images and labels are stored (Wildscenes3D)</p></li>
+<li><p><strong>split_dir</strong> (<em>str</em>) – Directory where train, val, and test files (.csv) have been extracted to</p></li>
 </ul>
 </dd>
 </dl>
@@ -1018,16 +1018,16 @@ split    -&gt; <a class="reference external" href="https://github.com/csiro-robo
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>dataset_dir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Directory where both RGB images and annotations have been extracted to</p></li>
-<li><p><strong>split_fnames</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></span>) – Dictionary that contains the paths where train, val, and test split files (.csv) have been extracted to</p></li>
-<li><p><strong>ontology</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – Ontology definition as found in the official repo</p></li>
+<li><p><strong>dataset_dir</strong> (<em>str</em>) – Directory where both RGB images and annotations have been extracted to</p></li>
+<li><p><strong>split_fnames</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></span>) – Dictionary that contains the paths where train, val, and test split files (.csv) have been extracted to</p></li>
+<li><p><strong>ontology</strong> (<em>dict</em>) – Ontology definition as found in the official repo</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Dataset and onotology</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Tuple[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>]</p>
+<dd class="field-odd"><p>Tuple[dict, dict]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1043,9 +1043,9 @@ split    -&gt; <a class="reference external" href="https://github.com/csiro-robo
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>dataset_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Path to the YAML dataset configuration file</p></li>
-<li><p><strong>dataset_dir</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em>) – Path to the directory containing images and annotations. If not provided, it will be inferred from the dataset file</p></li>
-<li><p><strong>im_ext</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Image file extension (default is “jpg”)</p></li>
+<li><p><strong>dataset_fname</strong> (<em>str</em>) – Path to the YAML dataset configuration file</p></li>
+<li><p><strong>dataset_dir</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – Path to the directory containing images and annotations. If not provided, it will be inferred from the dataset file</p></li>
+<li><p><strong>im_ext</strong> (<em>str</em>) – Image file extension (default is “jpg”)</p></li>
 </ul>
 </dd>
 </dl>
@@ -1056,12 +1056,12 @@ split    -&gt; <a class="reference external" href="https://github.com/csiro-robo
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Annotation path</p></li>
-<li><p><strong>image_size</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>]</em>) – Corresponding image size in (w, h) format for converting relative bbox size to absolute. If not provided, we will assume image path</p></li>
+<li><p><strong>fname</strong> (<em>str</em>) – Annotation path</p></li>
+<li><p><strong>image_size</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>]</em><em>]</em>) – Corresponding image size in (w, h) format for converting relative bbox size to absolute. If not provided, we will assume image path</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.14)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>]], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]]</span></p>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code>]], <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>], <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>]]</span></p>
 </dd>
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Tuple of (boxes, category_indices)</p>
@@ -1078,16 +1078,16 @@ split    -&gt; <a class="reference external" href="https://github.com/csiro-robo
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>dataset_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Path to the YAML dataset configuration file</p></li>
-<li><p><strong>dataset_dir</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em>) – Path to the directory containing images and annotations. If not provided, it will be inferred from the dataset file</p></li>
-<li><p><strong>im_ext</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Image file extension (default is “jpg”)</p></li>
+<li><p><strong>dataset_fname</strong> (<em>str</em>) – Path to the YAML dataset configuration file</p></li>
+<li><p><strong>dataset_dir</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – Path to the directory containing images and annotations. If not provided, it will be inferred from the dataset file</p></li>
+<li><p><strong>im_ext</strong> (<em>str</em>) – Image file extension (default is “jpg”)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Dataset DataFrame and ontology dictionary</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Tuple[pd.DataFrame, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>]</p>
+<dd class="field-odd"><p>Tuple[pd.DataFrame, dict]</p>
 </dd>
 </dl>
 </dd></dl>

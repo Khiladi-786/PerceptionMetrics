@@ -310,10 +310,10 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>model</strong> (<em>Any</em>) – Detection model object</p></li>
-<li><p><strong>model_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Model type (e.g. scripted, compiled, etc.)</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – JSON file containing model configuration</p></li>
-<li><p><strong>ontology_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – JSON file containing model output ontology</p></li>
-<li><p><strong>model_fname</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – Model file or directory, defaults to None</p></li>
+<li><p><strong>model_type</strong> (<em>str</em>) – Model type (e.g. scripted, compiled, etc.)</p></li>
+<li><p><strong>model_cfg</strong> (<em>str</em>) – JSON file containing model configuration</p></li>
+<li><p><strong>ontology_fname</strong> (<em>str</em>) – JSON file containing model output ontology</p></li>
+<li><p><strong>model_fname</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Model file or directory, defaults to None</p></li>
 </ul>
 </dd>
 </dl>
@@ -325,10 +325,10 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dataset</strong> (<em>ImageDetecctionDataset</em>) – Detection dataset for which evaluation will be performed</p></li>
-<li><p><strong>split</strong> (<em>Union</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>]</em>) – Split(s) to use, defaults to “test”</p></li>
-<li><p><strong>ontology_translation</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em>) – JSON file containing translation between dataset and model output ontologies</p></li>
-<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em>) – Directory to save predictions per sample, defaults to None. If None, predictions are not saved.</p></li>
-<li><p><strong>results_per_sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a>) – Whether to store results per sample or not, defaults to False. If True, predictions_outdir must be provided.</p></li>
+<li><p><strong>split</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em>) – Split(s) to use, defaults to “test”</p></li>
+<li><p><strong>ontology_translation</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – JSON file containing translation between dataset and model output ontologies</p></li>
+<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – Directory to save predictions per sample, defaults to None. If None, predictions are not saved.</p></li>
+<li><p><strong>results_per_sample</strong> (<em>bool</em>) – Whether to store results per sample or not, defaults to False. If True, predictions_outdir must be provided.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -352,7 +352,7 @@
 <dd class="field-even"><p>List of detection results (each a dict with bbox, confidence, class)</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>List[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>]</p>
+<dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -368,10 +368,10 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>model</strong> (<em>Any</em>) – Detection model object</p></li>
-<li><p><strong>model_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Model type (e.g. scripted, compiled, etc.)</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – JSON file containing model configuration (e.g. image size or normalization parameters)</p></li>
-<li><p><strong>ontology_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – JSON file containing model output ontology</p></li>
-<li><p><strong>model_fname</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – Model file or directory, defaults to None</p></li>
+<li><p><strong>model_type</strong> (<em>str</em>) – Model type (e.g. scripted, compiled, etc.)</p></li>
+<li><p><strong>model_cfg</strong> (<em>str</em>) – JSON file containing model configuration (e.g. image size or normalization parameters)</p></li>
+<li><p><strong>ontology_fname</strong> (<em>str</em>) – JSON file containing model output ontology</p></li>
+<li><p><strong>model_fname</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Model file or directory, defaults to None</p></li>
 </ul>
 </dd>
 </dl>
@@ -383,10 +383,10 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dataset</strong> (<a class="reference internal" href="perceptionmetrics.datasets.html#perceptionmetrics.datasets.detection.ImageDetectionDataset" title="perceptionmetrics.datasets.detection.ImageDetectionDataset"><em>ImageDetectionDataset</em></a>) – Image detection dataset for which the evaluation will be performed</p></li>
-<li><p><strong>split</strong> (<em>Union</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>]</em>) – Split(s) to use, defaults to “test”</p></li>
-<li><p><strong>ontology_translation</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em>) – JSON file containing translation between dataset and model output ontologies</p></li>
-<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em>) – Directory to save predictions per sample, defaults to None. If None, predictions are not saved.</p></li>
-<li><p><strong>results_per_sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a>) – Whether to store results per sample or not, defaults to False. If True, predictions_outdir must be provided.</p></li>
+<li><p><strong>split</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em>) – Split(s) to use, defaults to “test”</p></li>
+<li><p><strong>ontology_translation</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – JSON file containing translation between dataset and model output ontologies</p></li>
+<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – Directory to save predictions per sample, defaults to None. If None, predictions are not saved.</p></li>
+<li><p><strong>results_per_sample</strong> (<em>bool</em>) – Whether to store results per sample or not, defaults to False. If True, predictions_outdir must be provided.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -410,7 +410,7 @@
 <dd class="field-even"><p>List of detection results</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>List[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>]</p>
+<dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -426,10 +426,10 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>model</strong> (<em>Any</em>) – Detection model object</p></li>
-<li><p><strong>model_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Model type (e.g. scripted, compiled, etc.)</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – JSON file with model configuration</p></li>
-<li><p><strong>ontology_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – JSON file containing model output ontology</p></li>
-<li><p><strong>model_fname</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – Model file or directory, defaults to None</p></li>
+<li><p><strong>model_type</strong> (<em>str</em>) – Model type (e.g. scripted, compiled, etc.)</p></li>
+<li><p><strong>model_cfg</strong> (<em>str</em>) – JSON file with model configuration</p></li>
+<li><p><strong>ontology_fname</strong> (<em>str</em>) – JSON file containing model output ontology</p></li>
+<li><p><strong>model_fname</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Model file or directory, defaults to None</p></li>
 </ul>
 </dd>
 </dl>
@@ -441,10 +441,10 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dataset</strong> (<a class="reference internal" href="perceptionmetrics.datasets.html#perceptionmetrics.datasets.detection.LiDARDetectionDataset" title="perceptionmetrics.datasets.detection.LiDARDetectionDataset"><em>LiDARDetectionDataset</em></a>) – LiDAR detection dataset for which the evaluation will be performed</p></li>
-<li><p><strong>split</strong> (<em>Union</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>]</em>) – Split or splits to be used from the dataset, defaults to “test”</p></li>
-<li><p><strong>ontology_translation</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em>) – JSON file containing translation between dataset and model output ontologies</p></li>
-<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em>) – Directory to save predictions per sample, defaults to None. If None, predictions are not saved.</p></li>
-<li><p><strong>results_per_sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to store results per sample or not, defaults to False. If True, predictions_outdir must be provided.</p></li>
+<li><p><strong>split</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em>) – Split or splits to be used from the dataset, defaults to “test”</p></li>
+<li><p><strong>ontology_translation</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – JSON file containing translation between dataset and model output ontologies</p></li>
+<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – Directory to save predictions per sample, defaults to None. If None, predictions are not saved.</p></li>
+<li><p><strong>results_per_sample</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to store results per sample or not, defaults to False. If True, predictions_outdir must be provided.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -468,7 +468,7 @@
 <dd class="field-even"><p>List of detection results</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>List[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>]</p>
+<dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -490,16 +490,16 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="perceptionmetrics.models.perception.PerceptionModel">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">perceptionmetrics.models.perception.</span></span><span class="sig-name descname"><span class="pre">PerceptionModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_cfg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ontology_fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_fname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/perceptionmetrics/models/perception.html#PerceptionModel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#perceptionmetrics.models.perception.PerceptionModel" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></a></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
 <p>Base class for all vision perception models (e.g., segmentation, detection).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>model</strong> (<em>Any</em>) – Model object</p></li>
-<li><p><strong>model_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Model type (e.g. scripted, compiled, etc.)</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – JSON file containing model configuration</p></li>
-<li><p><strong>ontology_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – JSON file containing model output ontology</p></li>
-<li><p><strong>model_fname</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – Model file or directory, defaults to None</p></li>
+<li><p><strong>model_type</strong> (<em>str</em>) – Model type (e.g. scripted, compiled, etc.)</p></li>
+<li><p><strong>model_cfg</strong> (<em>str</em>) – JSON file containing model configuration</p></li>
+<li><p><strong>ontology_fname</strong> (<em>str</em>) – JSON file containing model output ontology</p></li>
+<li><p><strong>model_fname</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Model file or directory, defaults to None</p></li>
 </ul>
 </dd>
 </dl>
@@ -509,7 +509,7 @@
 <dd><p>Evaluate the model on the given dataset.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.3.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a></span></p>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></span></p>
 </dd>
 </dl>
 </dd></dl>
@@ -521,12 +521,12 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>runs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Number of runs to measure inference time, defaults to 30</p></li>
-<li><p><strong>warm_up_runs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Number of warm-up runs, defaults to 5</p></li>
+<li><p><strong>runs</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of runs to measure inference time, defaults to 30</p></li>
+<li><p><strong>warm_up_runs</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of warm-up runs, defaults to 5</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></span></p>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></span></p>
 </dd>
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Dictionary containing computational cost information</p>
@@ -541,8 +541,8 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>dataset_ontology</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – Image or LiDAR dataset ontology</p></li>
-<li><p><strong>ontology_translation</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – JSON file containing translation between model and dataset ontologies, defaults to None</p></li>
+<li><p><strong>dataset_ontology</strong> (<em>dict</em>) – Image or LiDAR dataset ontology</p></li>
+<li><p><strong>ontology_translation</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – JSON file containing translation between model and dataset ontologies, defaults to None</p></li>
 </ul>
 </dd>
 </dl>
@@ -554,10 +554,10 @@
 <dd><p>Perform inference for a single image or point cloud.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Image</span></code>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>]</span></p>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Image</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>]</span></p>
 </dd>
 <dt class="field-even">Parameters<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>data</strong> (<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.4)"><em>ndarray</em></a><em> | </em><em>Image</em>)</p>
+<dd class="field-even"><p><strong>data</strong> (<em>ndarray</em><em> | </em><em>Image</em>)</p>
 </dd>
 </dl>
 </dd></dl>
@@ -576,10 +576,10 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>model</strong> (<em>Any</em>) – Image segmentation model object</p></li>
-<li><p><strong>model_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Model type (e.g. scripted, compiled, etc.)</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – JSON file containing model configuration (e.g. image size or normalization parameters)</p></li>
-<li><p><strong>ontology_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – JSON file containing model output ontology</p></li>
-<li><p><strong>model_fname</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – Model file or directory</p></li>
+<li><p><strong>model_type</strong> (<em>str</em>) – Model type (e.g. scripted, compiled, etc.)</p></li>
+<li><p><strong>model_cfg</strong> (<em>str</em>) – JSON file containing model configuration (e.g. image size or normalization parameters)</p></li>
+<li><p><strong>ontology_fname</strong> (<em>str</em>) – JSON file containing model output ontology</p></li>
+<li><p><strong>model_fname</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Model file or directory</p></li>
 </ul>
 </dd>
 </dl>
@@ -591,11 +591,11 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dataset</strong> (<a class="reference internal" href="perceptionmetrics.datasets.html#perceptionmetrics.datasets.segmentation.ImageSegmentationDataset" title="perceptionmetrics.datasets.segmentation.ImageSegmentationDataset"><em>ImageSegmentationDataset</em></a>) – Image segmentation dataset for which the evaluation will be performed</p></li>
-<li><p><strong>split</strong> (<em>Union</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>]</em><em>, </em><em>optional</em>) – Split or splits to be used from the dataset, defaults to “test”</p></li>
-<li><p><strong>ontology_translation</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – JSON file containing translation between dataset and model output ontologies</p></li>
-<li><p><strong>translations_direction</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Direction of the ontology translation. Either “dataset_to_model” or “model_to_dataset”, defaults to “dataset_to_model”</p></li>
-<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – Directory to save predictions per sample, defaults to None. If None, predictions are not saved.</p></li>
-<li><p><strong>results_per_sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to store results per sample or not, defaults to False. If True, predictions_outdir must be provided.</p></li>
+<li><p><strong>split</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – Split or splits to be used from the dataset, defaults to “test”</p></li>
+<li><p><strong>ontology_translation</strong> (<em>str</em><em>, </em><em>optional</em>) – JSON file containing translation between dataset and model output ontologies</p></li>
+<li><p><strong>translations_direction</strong> (<em>str</em><em>, </em><em>optional</em>) – Direction of the ontology translation. Either “dataset_to_model” or “model_to_dataset”, defaults to “dataset_to_model”</p></li>
+<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Directory to save predictions per sample, defaults to None. If None, predictions are not saved.</p></li>
+<li><p><strong>results_per_sample</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to store results per sample or not, defaults to False. If True, predictions_outdir must be provided.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -614,13 +614,13 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>image_size</strong> (<em>Tuple</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>, </em><em>optional</em>) – Image size used for inference</p></li>
-<li><p><strong>runs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Number of runs to measure inference time, defaults to 30</p></li>
-<li><p><strong>warm_up_runs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Number of warm-up runs, defaults to 5</p></li>
+<li><p><strong>image_size</strong> (<em>Tuple</em><em>[</em><em>int</em><em>]</em><em>, </em><em>optional</em>) – Image size used for inference</p></li>
+<li><p><strong>runs</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of runs to measure inference time, defaults to 30</p></li>
+<li><p><strong>warm_up_runs</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of warm-up runs, defaults to 5</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></span></p>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></span></p>
 </dd>
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Dictionary containing computational cost information</p>
@@ -636,7 +636,7 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>image</strong> (<em>Image.Image</em>) – PIL image</p></li>
-<li><p><strong>return_sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to return the sample data along with predictions, defaults to False</p></li>
+<li><p><strong>return_sample</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to return the sample data along with predictions, defaults to False</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -659,10 +659,10 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>model</strong> (<em>Any</em>) – LiDAR segmentation model object</p></li>
-<li><p><strong>model_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Model type (e.g. scripted, compiled, etc.)</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – JSON file containing model configuration (e.g. sampling method, input format, etc.)</p></li>
-<li><p><strong>ontology_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – JSON file containing model output ontology</p></li>
-<li><p><strong>model_fname</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – Model file or directory</p></li>
+<li><p><strong>model_type</strong> (<em>str</em>) – Model type (e.g. scripted, compiled, etc.)</p></li>
+<li><p><strong>model_cfg</strong> (<em>str</em>) – JSON file containing model configuration (e.g. sampling method, input format, etc.)</p></li>
+<li><p><strong>ontology_fname</strong> (<em>str</em>) – JSON file containing model output ontology</p></li>
+<li><p><strong>model_fname</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Model file or directory</p></li>
 </ul>
 </dd>
 </dl>
@@ -674,11 +674,11 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dataset</strong> (<a class="reference internal" href="perceptionmetrics.datasets.html#perceptionmetrics.datasets.segmentation.LiDARSegmentationDataset" title="perceptionmetrics.datasets.segmentation.LiDARSegmentationDataset"><em>LiDARSegmentationDataset</em></a>) – LiDAR segmentation dataset for which the evaluation will be performed</p></li>
-<li><p><strong>split</strong> (<em>Union</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>]</em><em>, </em><em>optional</em>) – Split or splits to be used from the dataset, defaults to “test”</p></li>
-<li><p><strong>ontology_translation</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – JSON file containing translation between dataset and model output ontologies</p></li>
-<li><p><strong>translations_direction</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Direction of the ontology translation. Either “dataset_to_model” or “model_to_dataset”, defaults to “dataset_to_model”</p></li>
-<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – Directory to save predictions per sample, defaults to None. If None, predictions are not saved.</p></li>
-<li><p><strong>results_per_sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to store results per sample or not, defaults to False. If True, predictions_outdir must be provided.</p></li>
+<li><p><strong>split</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – Split or splits to be used from the dataset, defaults to “test”</p></li>
+<li><p><strong>ontology_translation</strong> (<em>str</em><em>, </em><em>optional</em>) – JSON file containing translation between dataset and model output ontologies</p></li>
+<li><p><strong>translations_direction</strong> (<em>str</em><em>, </em><em>optional</em>) – Direction of the ontology translation. Either “dataset_to_model” or “model_to_dataset”, defaults to “dataset_to_model”</p></li>
+<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Directory to save predictions per sample, defaults to None. If None, predictions are not saved.</p></li>
+<li><p><strong>results_per_sample</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to store results per sample or not, defaults to False. If True, predictions_outdir must be provided.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -697,12 +697,12 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>runs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Number of runs to measure inference time, defaults to 30</p></li>
-<li><p><strong>warm_up_runs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Number of warm-up runs, defaults to 5</p></li>
+<li><p><strong>runs</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of runs to measure inference time, defaults to 30</p></li>
+<li><p><strong>warm_up_runs</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of warm-up runs, defaults to 5</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></span></p>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></span></p>
 </dd>
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Dictionary containing computational cost information</p>
@@ -717,9 +717,9 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>points_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Point cloud in SemanticKITTI .bin format</p></li>
-<li><p><strong>has_intensity</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether the point cloud has intensity values, defaults to True</p></li>
-<li><p><strong>return_sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to return the sample data along with predictions, defaults to False</p></li>
+<li><p><strong>points_fname</strong> (<em>str</em>) – Point cloud in SemanticKITTI .bin format</p></li>
+<li><p><strong>has_intensity</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether the point cloud has intensity values, defaults to True</p></li>
+<li><p><strong>return_sample</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to return the sample data along with predictions, defaults to False</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -742,10 +742,10 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>model</strong> (<em>Any</em>) – Segmentation model object</p></li>
-<li><p><strong>model_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Model type (e.g. scripted, compiled, etc.)</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – JSON file containing model configuration</p></li>
-<li><p><strong>ontology_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – JSON file containing model output ontology</p></li>
-<li><p><strong>model_fname</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – Model file or directory, defaults to None</p></li>
+<li><p><strong>model_type</strong> (<em>str</em>) – Model type (e.g. scripted, compiled, etc.)</p></li>
+<li><p><strong>model_cfg</strong> (<em>str</em>) – JSON file containing model configuration</p></li>
+<li><p><strong>ontology_fname</strong> (<em>str</em>) – JSON file containing model output ontology</p></li>
+<li><p><strong>model_fname</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Model file or directory, defaults to None</p></li>
 </ul>
 </dd>
 </dl>
@@ -757,11 +757,11 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dataset</strong> (<a class="reference internal" href="perceptionmetrics.datasets.html#perceptionmetrics.datasets.segmentation.ImageSegmentationDataset" title="perceptionmetrics.datasets.segmentation.ImageSegmentationDataset"><em>ImageSegmentationDataset</em></a>) – Segmentation dataset for which the evaluation will be performed</p></li>
-<li><p><strong>split</strong> (<em>Union</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>]</em><em>, </em><em>optional</em>) – Split or splits to be used from the dataset, defaults to “test”</p></li>
-<li><p><strong>ontology_translation</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – JSON file containing translation between dataset and model output ontologies</p></li>
-<li><p><strong>translations_direction</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Direction of the ontology translation. Either “dataset_to_model” or “model_to_dataset”, defaults to “dataset_to_model”</p></li>
-<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – Directory to save predictions per sample, defaults to None. If None, predictions are not saved.</p></li>
-<li><p><strong>results_per_sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to store results per sample or not, defaults to False. If True, predictions_outdir must be provided.</p></li>
+<li><p><strong>split</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – Split or splits to be used from the dataset, defaults to “test”</p></li>
+<li><p><strong>ontology_translation</strong> (<em>str</em><em>, </em><em>optional</em>) – JSON file containing translation between dataset and model output ontologies</p></li>
+<li><p><strong>translations_direction</strong> (<em>str</em><em>, </em><em>optional</em>) – Direction of the ontology translation. Either “dataset_to_model” or “model_to_dataset”, defaults to “dataset_to_model”</p></li>
+<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Directory to save predictions per sample, defaults to None. If None, predictions are not saved.</p></li>
+<li><p><strong>results_per_sample</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to store results per sample or not, defaults to False. If True, predictions_outdir must be provided.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -815,19 +815,19 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="perceptionmetrics.models.tf_segmentation.ImageSegmentationTensorflowDataset">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">perceptionmetrics.models.tf_segmentation.</span></span><span class="sig-name descname"><span class="pre">ImageSegmentationTensorflowDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">splits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['test']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lut_ontology</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalization</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep_aspect</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/perceptionmetrics/models/tf_segmentation.html#ImageSegmentationTensorflowDataset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#perceptionmetrics.models.tf_segmentation.ImageSegmentationTensorflowDataset" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Dataset for image segmentation Tensorflow models</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dataset</strong> (<a class="reference internal" href="perceptionmetrics.datasets.html#perceptionmetrics.datasets.segmentation.ImageSegmentationDataset" title="perceptionmetrics.datasets.segmentation.ImageSegmentationDataset"><em>ImageSegmentationDataset</em></a>) – Image segmentation dataset</p></li>
-<li><p><strong>resize</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>]</em><em>, </em><em>optional</em>) – Target size for resizing images, defaults to None</p></li>
-<li><p><strong>crop</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>]</em><em>, </em><em>optional</em>) – Target size for center cropping images, defaults to None</p></li>
-<li><p><strong>batch_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Batch size, defaults to 1</p></li>
-<li><p><strong>splits</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Splits to be used from the dataset, defaults to [“test”]</p></li>
-<li><p><strong>lut_ontology</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a><em>, </em><em>optional</em>) – LUT to transform label classes, defaults to None</p></li>
-<li><p><strong>normalization</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a><em>, </em><em>optional</em>) – Parameters for normalizing input images, defaults to None</p></li>
-<li><p><strong>keep_aspect</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to keep aspect ratio when resizing images. If true, resize to match smaller sides size and crop center. Defaults to False</p></li>
+<li><p><strong>resize</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – Target size for resizing images, defaults to None</p></li>
+<li><p><strong>crop</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – Target size for center cropping images, defaults to None</p></li>
+<li><p><strong>batch_size</strong> (<em>int</em><em>, </em><em>optional</em>) – Batch size, defaults to 1</p></li>
+<li><p><strong>splits</strong> (<em>str</em><em>, </em><em>optional</em>) – Splits to be used from the dataset, defaults to [“test”]</p></li>
+<li><p><strong>lut_ontology</strong> (<em>dict</em><em>, </em><em>optional</em>) – LUT to transform label classes, defaults to None</p></li>
+<li><p><strong>normalization</strong> (<em>dict</em><em>, </em><em>optional</em>) – Parameters for normalizing input images, defaults to None</p></li>
+<li><p><strong>keep_aspect</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to keep aspect ratio when resizing images. If true, resize to match smaller sides size and crop center. Defaults to False</p></li>
 </ul>
 </dd>
 </dl>
@@ -838,9 +838,9 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>idx</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Sample index</p></li>
-<li><p><strong>images_fnames</strong> (<em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em>) – List containing all image filenames</p></li>
-<li><p><strong>labels_fnames</strong> (<em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em>) – List containing all corresponding label filenames</p></li>
+<li><p><strong>idx</strong> (<em>str</em>) – Sample index</p></li>
+<li><p><strong>images_fnames</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – List containing all image filenames</p></li>
+<li><p><strong>labels_fnames</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – List containing all corresponding label filenames</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -859,8 +859,8 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Input image or label filename</p></li>
-<li><p><strong>label</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether the input data is a label or not, defaults to False</p></li>
+<li><p><strong>fname</strong> (<em>str</em>) – Input image or label filename</p></li>
+<li><p><strong>label</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether the input data is a label or not, defaults to False</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -882,9 +882,9 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>model</strong> (<em>Union</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>torch.nn.Module</em><em>]</em>) – Either the filename of a Tensorflow model in SavedModel format or the model already loaded into an arbitrary Tensorflow or Keras model.</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – JSON file containing model configuration</p></li>
-<li><p><strong>ontology_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – JSON file containing model output ontology</p></li>
+<li><p><strong>model</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>torch.nn.Module</em><em>]</em>) – Either the filename of a Tensorflow model in SavedModel format or the model already loaded into an arbitrary Tensorflow or Keras model.</p></li>
+<li><p><strong>model_cfg</strong> (<em>str</em>) – JSON file containing model configuration</p></li>
+<li><p><strong>ontology_fname</strong> (<em>str</em>) – JSON file containing model output ontology</p></li>
 </ul>
 </dd>
 </dl>
@@ -896,11 +896,11 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dataset</strong> (<a class="reference internal" href="perceptionmetrics.datasets.html#perceptionmetrics.datasets.segmentation.ImageSegmentationDataset" title="perceptionmetrics.datasets.segmentation.ImageSegmentationDataset"><em>ImageSegmentationDataset</em></a>) – Image segmentation dataset for which the evaluation will be performed</p></li>
-<li><p><strong>split</strong> (<em>Union</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>]</em><em>, </em><em>optional</em>) – Split to be used from the dataset, defaults to “test”</p></li>
-<li><p><strong>ontology_translation</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – JSON file containing translation between dataset and model output ontologies</p></li>
-<li><p><strong>translations_direction</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Direction of the ontology translation. Either “dataset_to_model” or “model_to_dataset”, defaults to “dataset_to_model”</p></li>
-<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – Directory to save predictions per sample, defaults to None. If None, predictions are not saved.</p></li>
-<li><p><strong>results_per_sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to store results per sample or not, defaults to False. If True, predictions_outdir must be provided.</p></li>
+<li><p><strong>split</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – Split to be used from the dataset, defaults to “test”</p></li>
+<li><p><strong>ontology_translation</strong> (<em>str</em><em>, </em><em>optional</em>) – JSON file containing translation between dataset and model output ontologies</p></li>
+<li><p><strong>translations_direction</strong> (<em>str</em><em>, </em><em>optional</em>) – Direction of the ontology translation. Either “dataset_to_model” or “model_to_dataset”, defaults to “dataset_to_model”</p></li>
+<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Directory to save predictions per sample, defaults to None. If None, predictions are not saved.</p></li>
+<li><p><strong>results_per_sample</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to store results per sample or not, defaults to False. If True, predictions_outdir must be provided.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -919,13 +919,13 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>image_size</strong> (<em>Tuple</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>, </em><em>optional</em>) – Image size used for inference</p></li>
-<li><p><strong>runs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Number of runs to measure inference time, defaults to 30</p></li>
-<li><p><strong>warm_up_runs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Number of warm-up runs, defaults to 5</p></li>
+<li><p><strong>image_size</strong> (<em>Tuple</em><em>[</em><em>int</em><em>]</em><em>, </em><em>optional</em>) – Image size used for inference</p></li>
+<li><p><strong>runs</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of runs to measure inference time, defaults to 30</p></li>
+<li><p><strong>warm_up_runs</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of warm-up runs, defaults to 5</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></span></p>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></span></p>
 </dd>
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Dictionary containing computational cost information</p>
@@ -958,7 +958,7 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>image</strong> (<em>Image.Image</em>) – PIL image</p></li>
-<li><p><strong>return_sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to return the sample data along with predictions, defaults to False</p></li>
+<li><p><strong>return_sample</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to return the sample data along with predictions, defaults to False</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -980,8 +980,8 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>image</strong> (<em>tf.Tensor</em>) – Input image tensor</p></li>
-<li><p><strong>width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a>) – Target width for cropping</p></li>
-<li><p><strong>height</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a>) – Target width for cropping</p></li>
+<li><p><strong>width</strong> (<em>int</em>) – Target width for cropping</p></li>
+<li><p><strong>height</strong> (<em>int</em>) – Target width for cropping</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -1002,10 +1002,10 @@ aspect ratio is preserved.</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>image</strong> (<em>tf.Tensor</em>) – Input image tensor</p></li>
-<li><p><strong>method</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Resizing method (e.g. bilinear, nearest)</p></li>
-<li><p><strong>width</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>, </em><em>optional</em>) – Target width for resizing</p></li>
-<li><p><strong>height</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>, </em><em>optional</em>) – Target height for resizing</p></li>
-<li><p><strong>closest_divisor</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Closest divisor for the target size, defaults to 16. Only applies to the dimension not provided.</p></li>
+<li><p><strong>method</strong> (<em>str</em>) – Resizing method (e.g. bilinear, nearest)</p></li>
+<li><p><strong>width</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em><em>, </em><em>optional</em>) – Target width for resizing</p></li>
+<li><p><strong>height</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em><em>, </em><em>optional</em>) – Target height for resizing</p></li>
+<li><p><strong>closest_divisor</strong> (<em>int</em><em>, </em><em>optional</em>) – Closest divisor for the target size, defaults to 16. Only applies to the dimension not provided.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -1030,7 +1030,7 @@ aspect ratio is preserved.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dataset</strong> (<a class="reference internal" href="perceptionmetrics.datasets.html#perceptionmetrics.datasets.detection.ImageDetectionDataset" title="perceptionmetrics.datasets.detection.ImageDetectionDataset"><em>ImageDetectionDataset</em></a>) – Image detection dataset</p></li>
 <li><p><strong>transform</strong> (<em>transforms.Compose</em>) – Transformation to be applied to images</p></li>
-<li><p><strong>splits</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Splits to be used from the dataset, defaults to [“test”]</p></li>
+<li><p><strong>splits</strong> (<em>str</em><em>, </em><em>optional</em>) – Splits to be used from the dataset, defaults to [“test”]</p></li>
 </ul>
 </dd>
 </dl>
@@ -1043,9 +1043,9 @@ aspect ratio is preserved.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>model</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em> | </em><em>torch.nn.Module</em>)</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>)</p></li>
-<li><p><strong>ontology_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>)</p></li>
+<li><p><strong>model</strong> (<em>str</em><em> | </em><em>torch.nn.Module</em>)</p></li>
+<li><p><strong>model_cfg</strong> (<em>str</em>)</p></li>
+<li><p><strong>ontology_fname</strong> (<em>str</em>)</p></li>
 <li><p><strong>device</strong> (<em>torch.device</em>)</p></li>
 </ul>
 </dd>
@@ -1058,12 +1058,12 @@ aspect ratio is preserved.</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dataset</strong> (<a class="reference internal" href="perceptionmetrics.datasets.html#perceptionmetrics.datasets.detection.ImageDetectionDataset" title="perceptionmetrics.datasets.detection.ImageDetectionDataset"><em>ImageDetectionDataset</em></a>) – Image detection dataset</p></li>
-<li><p><strong>split</strong> (<em>Union</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>]</em>) – Dataset split(s) to evaluate</p></li>
-<li><p><strong>ontology_translation</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em>) – Optional translation for class mapping</p></li>
-<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em>) – Directory to save predictions, if desired</p></li>
-<li><p><strong>results_per_sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a>) – Store per-sample metrics</p></li>
-<li><p><strong>progress_callback</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>[</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>, </em><em>None</em><em>]</em><em>]</em>) – Optional callback function for progress updates in Streamlit UI</p></li>
-<li><p><strong>metrics_callback</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>[</em><em>[</em><em>pd.DataFrame</em><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>, </em><em>None</em><em>]</em><em>]</em>) – Optional callback function for intermediate metrics updates in Streamlit UI</p></li>
+<li><p><strong>split</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em>) – Dataset split(s) to evaluate</p></li>
+<li><p><strong>ontology_translation</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – Optional translation for class mapping</p></li>
+<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – Directory to save predictions, if desired</p></li>
+<li><p><strong>results_per_sample</strong> (<em>bool</em>) – Store per-sample metrics</p></li>
+<li><p><strong>progress_callback</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>[</em><em>[</em><em>int</em><em>, </em><em>int</em><em>]</em><em>, </em><em>None</em><em>]</em><em>]</em>) – Optional callback function for progress updates in Streamlit UI</p></li>
+<li><p><strong>metrics_callback</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>[</em><em>[</em><em>pd.DataFrame</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em><em>, </em><em>None</em><em>]</em><em>]</em>) – Optional callback function for intermediate metrics updates in Streamlit UI</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -1082,16 +1082,16 @@ aspect ratio is preserved.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>image_size</strong> (<em>Tuple</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em>) – Size of input image (H, W)</p></li>
-<li><p><strong>runs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a>) – Number of repeated runs to average over</p></li>
-<li><p><strong>warm_up_runs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a>) – Warm-up runs before timing</p></li>
+<li><p><strong>image_size</strong> (<em>Tuple</em><em>[</em><em>int</em><em>]</em>) – Size of input image (H, W)</p></li>
+<li><p><strong>runs</strong> (<em>int</em>) – Number of repeated runs to average over</p></li>
+<li><p><strong>warm_up_runs</strong> (<em>int</em>) – Warm-up runs before timing</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Dictionary with computational cost details</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a></p>
+<dd class="field-odd"><p>dict</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1108,7 +1108,7 @@ aspect ratio is preserved.</p>
 <dd class="field-even"><p>Dictionary with keys ‘boxes’, ‘labels’, ‘scores’</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Dict[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)">str</a>, torch.Tensor]</p>
+<dd class="field-odd"><p>Dict[str, torch.Tensor]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1122,7 +1122,7 @@ aspect ratio is preserved.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>data</strong> (<em>Union</em><em>[</em><em>Dict</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>torch.Tensor</em><em>]</em><em>, </em><em>List</em><em>[</em><em>Dict</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>torch.Tensor</em><em>]</em><em>]</em><em>]</em>) – Detection data (a single dict or list of dicts with tensor values)</p></li>
+<li><p><strong>data</strong> (<em>Union</em><em>[</em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>torch.Tensor</em><em>]</em><em>, </em><em>List</em><em>[</em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>torch.Tensor</em><em>]</em><em>]</em><em>]</em>) – Detection data (a single dict or list of dicts with tensor values)</p></li>
 <li><p><strong>device</strong> (<em>torch.device</em>) – Device to move data to</p></li>
 </ul>
 </dd>
@@ -1130,7 +1130,7 @@ aspect ratio is preserved.</p>
 <dd class="field-even"><p>Data with all tensors moved to the target device</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Union[Dict[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)">str</a>, torch.Tensor], List[Dict[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)">str</a>, torch.Tensor]]]</p>
+<dd class="field-odd"><p>Union[Dict[str, torch.Tensor], List[Dict[str, torch.Tensor]]]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1143,10 +1143,10 @@ aspect ratio is preserved.</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>model</strong> (<em>Any</em>) – TorchScript or PyTorch model (segmentation, detection, etc.)</p></li>
-<li><p><strong>dummy_input</strong> (<em>Union</em><em>[</em><em>torch.Tensor</em><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.14)"><em>tuple</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><em>list</em></a><em>]</em>) – Dummy input data (Tensor, Tuple, or List of Dicts for detection)</p></li>
-<li><p><strong>model_fname</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em>) – Optional path to model file for size estimation</p></li>
-<li><p><strong>runs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a>) – Number of timed runs</p></li>
-<li><p><strong>warm_up_runs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a>) – Warm-up iterations before timing</p></li>
+<li><p><strong>dummy_input</strong> (<em>Union</em><em>[</em><em>torch.Tensor</em><em>, </em><em>tuple</em><em>, </em><em>list</em><em>]</em>) – Dummy input data (Tensor, Tuple, or List of Dicts for detection)</p></li>
+<li><p><strong>model_fname</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – Optional path to model file for size estimation</p></li>
+<li><p><strong>runs</strong> (<em>int</em>) – Number of timed runs</p></li>
+<li><p><strong>warm_up_runs</strong> (<em>int</em>) – Warm-up iterations before timing</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -1164,13 +1164,13 @@ aspect ratio is preserved.</p>
 <dd><p>Get the shape of the provided data</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>data</strong> (<em>Union</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.14)"><em>tuple</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><em>list</em></a><em>]</em>) – Data provided (it can be a single or multiple tensors)</p>
+<dd class="field-odd"><p><strong>data</strong> (<em>Union</em><em>[</em><em>tuple</em><em>, </em><em>list</em><em>]</em>) – Data provided (it can be a single or multiple tensors)</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Data shape</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Union[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.14)">tuple</a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)">list</a>]</p>
+<dd class="field-odd"><p>Union[tuple, list]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1187,10 +1187,10 @@ the aspect ratio is preserved.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>width</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>, </em><em>optional</em>) – Target width for resizing</p></li>
-<li><p><strong>height</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>, </em><em>optional</em>) – Target height for resizing</p></li>
+<li><p><strong>width</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em><em>, </em><em>optional</em>) – Target width for resizing</p></li>
+<li><p><strong>height</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em><em>, </em><em>optional</em>) – Target height for resizing</p></li>
 <li><p><strong>interpolation</strong> (<em>F.InterpolationMode</em><em>, </em><em>defaults to F.InterpolationMode.BILINEAR</em>) – Interpolation mode for resizing (e.g. NEAREST, BILINEAR)</p></li>
-<li><p><strong>closest_divisor</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Closest divisor for the target size, defaults to 16. Only applies to the dimension not provided.</p></li>
+<li><p><strong>closest_divisor</strong> (<em>int</em><em>, </em><em>optional</em>) – Closest divisor for the target size, defaults to 16. Only applies to the dimension not provided.</p></li>
 </ul>
 </dd>
 </dl>
@@ -1220,7 +1220,7 @@ the aspect ratio is preserved.</p>
 <li><p><strong>dataset</strong> (<a class="reference internal" href="perceptionmetrics.datasets.html#perceptionmetrics.datasets.segmentation.ImageSegmentationDataset" title="perceptionmetrics.datasets.segmentation.ImageSegmentationDataset"><em>ImageSegmentationDataset</em></a>) – Image segmentation dataset</p></li>
 <li><p><strong>transform</strong> (<em>transforms.Compose</em>) – Transformation to be applied to images</p></li>
 <li><p><strong>target_transform</strong> (<em>transforms.Compose</em>) – Transformation to be applied to labels</p></li>
-<li><p><strong>splits</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Splits to be used from the dataset, defaults to [“test”]</p></li>
+<li><p><strong>splits</strong> (<em>str</em><em>, </em><em>optional</em>) – Splits to be used from the dataset, defaults to [“test”]</p></li>
 </ul>
 </dd>
 </dl>
@@ -1235,9 +1235,9 @@ the aspect ratio is preserved.</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dataset</strong> (<a class="reference internal" href="perceptionmetrics.datasets.html#perceptionmetrics.datasets.segmentation.LiDARSegmentationDataset" title="perceptionmetrics.datasets.segmentation.LiDARSegmentationDataset"><em>LiDARSegmentationDataset</em></a>) – LiDAR segmentation dataset</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – Dictionary containing model configuration</p></li>
+<li><p><strong>model_cfg</strong> (<em>dict</em>) – Dictionary containing model configuration</p></li>
 <li><p><strong>get_sample</strong> (<em>callable</em>) – Function for loading sample data</p></li>
-<li><p><strong>splits</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Splits to be used from the dataset, defaults to [“test”]</p></li>
+<li><p><strong>splits</strong> (<em>str</em><em>, </em><em>optional</em>) – Splits to be used from the dataset, defaults to [“test”]</p></li>
 </ul>
 </dd>
 </dl>
@@ -1250,9 +1250,9 @@ the aspect ratio is preserved.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>model</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em> | </em><em>torch.nn.Module</em>)</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>)</p></li>
-<li><p><strong>ontology_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>)</p></li>
+<li><p><strong>model</strong> (<em>str</em><em> | </em><em>torch.nn.Module</em>)</p></li>
+<li><p><strong>model_cfg</strong> (<em>str</em>)</p></li>
+<li><p><strong>ontology_fname</strong> (<em>str</em>)</p></li>
 </ul>
 </dd>
 </dl>
@@ -1264,10 +1264,10 @@ the aspect ratio is preserved.</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dataset</strong> (<a class="reference internal" href="perceptionmetrics.datasets.html#perceptionmetrics.datasets.segmentation.ImageSegmentationDataset" title="perceptionmetrics.datasets.segmentation.ImageSegmentationDataset"><em>ImageSegmentationDataset</em></a>) – Image segmentation dataset for which the evaluation will be performed</p></li>
-<li><p><strong>split</strong> (<em>Union</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>]</em><em>, </em><em>optional</em>) – Split or splits to be used from the dataset, defaults to “test”</p></li>
-<li><p><strong>ontology_translation</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – JSON file containing translation between dataset and model output ontologies</p></li>
-<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – Directory to save predictions per sample, defaults to None. If None, predictions are not saved.</p></li>
-<li><p><strong>results_per_sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to store results per sample or not, defaults to False. If True, predictions_outdir must be provided.</p></li>
+<li><p><strong>split</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – Split or splits to be used from the dataset, defaults to “test”</p></li>
+<li><p><strong>ontology_translation</strong> (<em>str</em><em>, </em><em>optional</em>) – JSON file containing translation between dataset and model output ontologies</p></li>
+<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Directory to save predictions per sample, defaults to None. If None, predictions are not saved.</p></li>
+<li><p><strong>results_per_sample</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to store results per sample or not, defaults to False. If True, predictions_outdir must be provided.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -1286,13 +1286,13 @@ the aspect ratio is preserved.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>image_size</strong> (<em>Tuple</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em>) – Image size used for inference</p></li>
-<li><p><strong>runs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Number of runs to measure inference time, defaults to 30</p></li>
-<li><p><strong>warm_up_runs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Number of warm-up runs, defaults to 5</p></li>
+<li><p><strong>image_size</strong> (<em>Tuple</em><em>[</em><em>int</em><em>]</em>) – Image size used for inference</p></li>
+<li><p><strong>runs</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of runs to measure inference time, defaults to 30</p></li>
+<li><p><strong>warm_up_runs</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of warm-up runs, defaults to 5</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></span></p>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></span></p>
 </dd>
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Dictionary containing computational cost information</p>
@@ -1325,7 +1325,7 @@ the aspect ratio is preserved.</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>image</strong> (<em>Image.Image</em>) – PIL image</p></li>
-<li><p><strong>return_sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to return the sample data along with predictions, defaults to False</p></li>
+<li><p><strong>return_sample</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to return the sample data along with predictions, defaults to False</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -1346,9 +1346,9 @@ the aspect ratio is preserved.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>model</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em> | </em><em>torch.nn.Module</em>)</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>)</p></li>
-<li><p><strong>ontology_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>)</p></li>
+<li><p><strong>model</strong> (<em>str</em><em> | </em><em>torch.nn.Module</em>)</p></li>
+<li><p><strong>model_cfg</strong> (<em>str</em>)</p></li>
+<li><p><strong>ontology_fname</strong> (<em>str</em>)</p></li>
 </ul>
 </dd>
 </dl>
@@ -1360,11 +1360,11 @@ the aspect ratio is preserved.</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>dataset</strong> (<a class="reference internal" href="perceptionmetrics.datasets.html#perceptionmetrics.datasets.segmentation.LiDARSegmentationDataset" title="perceptionmetrics.datasets.segmentation.LiDARSegmentationDataset"><em>LiDARSegmentationDataset</em></a>) – LiDAR segmentation dataset for which the evaluation will be performed</p></li>
-<li><p><strong>split</strong> (<em>Union</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>]</em><em>, </em><em>optional</em>) – Split or splits to be used from the dataset, defaults to “test”</p></li>
-<li><p><strong>ontology_translation</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – JSON file containing translation between dataset and model output ontologies</p></li>
-<li><p><strong>translation_direction</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>, </em><em>optional</em>) – Direction of the ontology translation, either ‘dataset_to_model’ or ‘model_to_dataset’, defaults to “dataset_to_model”</p></li>
-<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – Directory to save predictions per sample, defaults to None. If None, predictions are not saved.</p></li>
-<li><p><strong>results_per_sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to store results per sample or not, defaults to False. If True, predictions_outdir must be provided.</p></li>
+<li><p><strong>split</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – Split or splits to be used from the dataset, defaults to “test”</p></li>
+<li><p><strong>ontology_translation</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – JSON file containing translation between dataset and model output ontologies</p></li>
+<li><p><strong>translation_direction</strong> (<em>str</em><em>, </em><em>optional</em>) – Direction of the ontology translation, either ‘dataset_to_model’ or ‘model_to_dataset’, defaults to “dataset_to_model”</p></li>
+<li><p><strong>predictions_outdir</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Directory to save predictions per sample, defaults to None. If None, predictions are not saved.</p></li>
+<li><p><strong>results_per_sample</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to store results per sample or not, defaults to False. If True, predictions_outdir must be provided.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -1383,15 +1383,15 @@ the aspect ratio is preserved.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>point_cloud_range</strong> (<em>Tuple</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>, </em><em>optional</em>) – Point cloud range (meters), defaults to (-50, -50, -5, 50, 50, 5)</p></li>
-<li><p><strong>num_points</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Number of points in the point cloud, defaults to 100000</p></li>
-<li><p><strong>has_intensity</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether the point cloud has intensity values, defaults to False</p></li>
-<li><p><strong>runs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Number of runs to measure inference time, defaults to 30</p></li>
-<li><p><strong>warm_up_runs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Number of warm-up runs, defaults to 5</p></li>
+<li><p><strong>point_cloud_range</strong> (<em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em><em>, </em><em>optional</em>) – Point cloud range (meters), defaults to (-50, -50, -5, 50, 50, 5)</p></li>
+<li><p><strong>num_points</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of points in the point cloud, defaults to 100000</p></li>
+<li><p><strong>has_intensity</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether the point cloud has intensity values, defaults to False</p></li>
+<li><p><strong>runs</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of runs to measure inference time, defaults to 30</p></li>
+<li><p><strong>warm_up_runs</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of warm-up runs, defaults to 5</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></span></p>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></span></p>
 </dd>
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Dictionary containing computational cost information</p>
@@ -1406,17 +1406,17 @@ the aspect ratio is preserved.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – Sample data</p></li>
+<li><p><strong>sample</strong> (<em>dict</em>) – Sample data</p></li>
 <li><p><strong>model</strong> (<em>torch.nn.Module</em>) – PyTorch model</p></li>
-<li><p><strong>model_cfg</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><em>dict</em></a>) – Dictionary containing model configuration</p></li>
-<li><p><strong>measure_processing_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – whether to measure processing time, defaults to False</p></li>
+<li><p><strong>model_cfg</strong> (<em>dict</em>) – Dictionary containing model configuration</p></li>
+<li><p><strong>measure_processing_time</strong> (<em>bool</em><em>, </em><em>optional</em>) – whether to measure processing time, defaults to False</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>tuple of (predictions, labels, names) and processing time dictionary (if measured)</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Tuple[Tuple[torch.Tensor, Optional[torch.Tensor], List[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)">str</a>]], Optional[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)">dict</a>]]</p>
+<dd class="field-odd"><p>Tuple[Tuple[torch.Tensor, Optional[torch.Tensor], List[str]], Optional[dict]]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1428,10 +1428,10 @@ the aspect ratio is preserved.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>points_fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Point cloud in SemanticKITTI .bin format</p></li>
-<li><p><strong>has_intensity</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether the point cloud has intensity values, defaults to True</p></li>
-<li><p><strong>return_sample</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to return the sample data along with predictions, defaults to False</p></li>
-<li><p><strong>ignore_index</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>]</em><em>]</em><em>, </em><em>optional</em>) – List of class indices to ignore during prediction, defaults to None</p></li>
+<li><p><strong>points_fname</strong> (<em>str</em>) – Point cloud in SemanticKITTI .bin format</p></li>
+<li><p><strong>has_intensity</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether the point cloud has intensity values, defaults to True</p></li>
+<li><p><strong>return_sample</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to return the sample data along with predictions, defaults to False</p></li>
+<li><p><strong>ignore_index</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>int</em><em>]</em><em>]</em><em>, </em><em>optional</em>) – List of class indices to ignore during prediction, defaults to None</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -1454,9 +1454,9 @@ the aspect ratio is preserved.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>model</strong> (<em>Any</em>) – Either a TorchScript model or an arbitrary PyTorch module</p></li>
 <li><p><strong>dummy_input</strong> (<em>torch.Tensor</em>) – Dummy input data for the model</p></li>
-<li><p><strong>model_fname</strong> (<em>Optional</em><em>[</em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a><em>]</em><em>, </em><em>optional</em>) – Model filename used to measure model size, defaults to None</p></li>
-<li><p><strong>runs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Number of runs to measure inference time, defaults to 30</p></li>
-<li><p><strong>warm_up_runs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Number of warm-up runs, defaults to 5</p></li>
+<li><p><strong>model_fname</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Model filename used to measure model size, defaults to None</p></li>
+<li><p><strong>runs</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of runs to measure inference time, defaults to 30</p></li>
+<li><p><strong>warm_up_runs</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of warm-up runs, defaults to 5</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -1475,12 +1475,12 @@ the aspect ratio is preserved.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>input_format</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>) – Model format string</p></li>
-<li><p><strong>model_format</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><em>str</em></a>)</p></li>
+<li><p><strong>input_format</strong> (<em>str</em>) – Model format string</p></li>
+<li><p><strong>model_format</strong> (<em>str</em>)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></span></p>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></span></p>
 </dd>
 </dl>
 </dd></dl>
