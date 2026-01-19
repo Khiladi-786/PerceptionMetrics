@@ -2,10 +2,14 @@
 
 .mypy_cache
 __pycache__
+.ipynb_checkpoints
 
 .venv
 dist
 poetry.lock
+docs/py_docs/build/.doctrees/
+docs/py_docs/build/.buildinfo*
+
 
 local/
 third_party/

@@ -1,82 +1,82 @@
 # main links
 main:
   - title: Installation
-    url: /v2/installation
+    url: /installation
   - title: Compatibility
-    url: /v2/compatibility
+    url: /compatibility
   - title: Usage
-    url: /v2/usage/
-  - title: DetectionMetrics v1
-    url: /v1
+    url: /usage/
+  - title: DetectionMetrics
+    url: /DetectionMetrics/
   - title: About
     url: /about
 
-# v1 links
-main_v1:
+# DetectionMetrics links
+detectionmetrics:
   - title: Home
-    url: /v1
+    url: /DetectionMetrics/
   - title: Installation
-    url: /v1/installation
+    url: /DetectionMetrics/installation
   - title: Functionality
-    url: /v1/functionality/command_line_application
+    url: /DetectionMetrics/functionality/command_line_application
     children:
       - title: "Command line application (Auto Evaluator)"
-        url: /v1/functionality/command_line_application
+        url: /DetectionMetrics/functionality/command_line_application
       - title: "Converter"
-        url: /v1/functionality/converter/
+        url: /DetectionMetrics/functionality/converter/
       - title: "Deployer"
-        url: /v1/functionality/deployer/
+        url: /DetectionMetrics/functionality/deployer/
       - title: "Detector"
-        url: /v1/functionality/detector
+        url: /DetectionMetrics/functionality/detector
       - title: "Evaluator"
-        url: /v1/functionality/evaluator
+        url: /DetectionMetrics/functionality/evaluator
       - title: "Viewer"
-        url: /v1/functionality/viewer
+        url: /DetectionMetrics/functionality/viewer
       - title: "ROS Node"
-        url: /v1/functionality/ros_node
+        url: /DetectionMetrics/functionality/ros_node
   - title: Resources
-    url: /v1/resources/class_names
+    url: /DetectionMetrics/resources/class_names
     children:
       - title: "Datasets"
-        url: /v1/resources/datasets
+        url: /DetectionMetrics/resources/datasets
       - title: "Class Names"
-        url: /v1/resources/class_names
+        url: /DetectionMetrics/resources/class_names
       - title: "Frameworks"
-        url: /v1/resources/frameworks
+        url: /DetectionMetrics/resources/frameworks
       - title: "Model zoo"
-        url: /v1/resources/model_zoo
+        url: /DetectionMetrics/resources/model_zoo
       - title: "Testing Detection Metrics"
-        url: /v1/resources/testing_detectionmetrics
+        url: /DetectionMetrics/resources/testing_detectionmetrics
       - title: "Tutorial"
-        url: /v1/resources/tutorial
+        url: /DetectionMetrics/resources/tutorial
       - title: "New Functionality"
-        url: /v1/resources/gsoc_19
+        url: /DetectionMetrics/resources/gsoc_19
       - title: "Talks"
-        url: /v1/resources/talks
+        url: /DetectionMetrics/resources/talks
 
-# v2 links
-main_v2:
+# Main links
+main:
   - title: Home
     url: /
   - title: Installation
-    url: /v2/installation
+    url: /installation
   - title: Compatibility
-    url: /v2/compatibility
+    url: /compatibility
     children:
     - title: "Image semantic segmentation"
-      url: /v2/compatibility/#image-semantic-segmentation
+      url: /compatibility/#image-semantic-segmentation
     - title: "LiDAR semantic segmentation"
-      url: /v2/compatibility/#lidar-semantic-segmentation
+      url: /compatibility/#lidar-semantic-segmentation
     - title: "Image object detection"
-      url: /v2/compatibility/#image-object-detection
+      url: /compatibility/#image-object-detection
   - title: Usage
-    url: /v2/usage
+    url: /usage
     children:
       - title: "Interactive GUI"
-        url: /v2/usage/#interactive-gui
+        url: /usage/#interactive-gui
       - title: "Library"
-        url: /v2/usage/#library
+        url: /usage/#library
       - title: "Command-line interface"
-        url: /v2/usage/#command-line-interface
+        url: /usage/#command-line-interface
   - title: GUI
-    url: /v2/gui
+    url: /gui

@@ -5,8 +5,8 @@ from streamlit_image_select import image_select
 
 def dataset_viewer_tab():
     import tempfile
-    from detectionmetrics.datasets.coco import CocoDataset
-    from detectionmetrics.datasets.yolo import YOLODataset
+    from perceptionmetrics.datasets.coco import CocoDataset
+    from perceptionmetrics.datasets.yolo import YOLODataset
     import supervision as sv
     import numpy as np
     from PIL import Image
