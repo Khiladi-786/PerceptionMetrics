@@ -53,6 +53,11 @@ jobs:
         if: steps.version_check.outputs.changed == 'true'
         run: |
           ls -lh dist/
+      
+      - name: Configure TestPyPI repository
+        if: steps.version_check.outputs.changed == 'true'
+        run: |
+          poetry config repositories.testpypi https://test.pypi.org/legacy/
 
       - name: Publish to PyPI
         if: steps.version_check.outputs.changed == 'true'
