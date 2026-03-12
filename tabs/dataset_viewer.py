@@ -172,17 +172,6 @@ def dataset_viewer_tab():
     sample_images = image_files[start_idx : start_idx + IMAGES_PER_PAGE]
     image_paths = [os.path.join(img_dir, img_name) for img_name in sample_images]
 
-    # CSS for compact image grid
-    st.markdown(
-        """
-        <style>
-        .image-selector__image, .image-selector__image img {
-            max-width: 40px; max-height: 40px; width: 40px; height: 40px; object-fit: contain;
-        }
-        </style>
-    """,
-        unsafe_allow_html=True,
-    )
 
     # Navigation
     col1, col2, col3, col4 = st.columns([0.5, 9.5, 0.5, 0.5])
@@ -226,7 +215,7 @@ def dataset_viewer_tab():
                 st.session_state[page_key] = new_page
                 st.session_state[
                     f"img_select_all_{dataset_path}_{split}_{new_page}"
-                ] = image_files.index(selected_img) % IMAGES_PER_PAGE
+                ] = (image_files.index(selected_img) % IMAGES_PER_PAGE)
                 st.session_state["show_search_dropdown"] = False
                 st.rerun()
         with col3:
@@ -237,6 +226,16 @@ def dataset_viewer_tab():
                 st.session_state["show_search_dropdown"] = False
                 st.rerun()
 
+    caption_len_limit = 17
+    captions = [
+        (
+            (name[:caption_len_limit] + "..." + name[-3:])
+            if len(name) > caption_len_limit
+            else name
+        )
+        for name in sample_images
+    ]
+
     # Image grid
     img_select_key = f"img_select_all_{dataset_path}_{split}_{current_page}"
     img_select_index = st.session_state.get(img_select_key)
@@ -246,7 +245,7 @@ def dataset_viewer_tab():
         image_select(
             label="",
             images=image_paths,
-            captions=sample_images,
+            captions=captions,
             use_container_width=False,
             key=img_select_key,
             index=img_select_index,
